@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'inter';
+}
+
+.web_container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.adver{
+    height: 475px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 20%;
+}
+
+.adver-content{
+    
+}
+
+.adver-sub-header{
+    margin-top: 18px;
+    text-align: center;
+   line-height: 30px;
+}
+
+.adver-sub-header p{
+    
+}
+
+.adver-items{
+    margin-top: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;   
+}
+
+.adver-item{
+    text-align: center;
+}
+
+.adver-item p{
+    margin-top: 18px;
+}
+
+.btn-item{
+    text-decoration: none;
+}
+
+.btn-item p{
+    margin-top: 36px;
+}
+
+.btn-item i{
+    padding-left: 10px;
+}
