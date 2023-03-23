@@ -63,7 +63,7 @@ body{
     margin: 0 20px;
     color : #333;
     position: relative;
-    
+    font-size: 0.9em;
 }
 .nav_select ul li a:before{
     content: "";
@@ -277,7 +277,7 @@ body{
 .feedback_numbers p{
     margin-top: 7px;
     font-size: 1em;
-    color : #333;
+    color : #726e6e;
 }
 .header_brands ul{
     display: flex;
@@ -426,6 +426,11 @@ body{
     text-decoration: none;
     line-height: 40px;
     color: #777E90;
+}
+.footer_service ul li a:hover ,
+.footer_support ul li a:hover,
+.footer_business ul li a:hover{
+    color : #3B71FE;
 }
 .footer_socials{
     display: flex;
