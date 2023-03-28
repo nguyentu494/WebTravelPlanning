@@ -23,407 +23,230 @@
     />
   </head>
   <body>
-    <div class="account-setting">
-      <div class="top13">
-        <div class="content24">
-          <div class="logo2">
-            <div class="logo3">
-              <img class="logo-icon1" alt="" src="./public/logo-icon1.svg" />
-            </div>
-            <div class="tittle13">Airtrav</div>
-          </div>
-          <div class="middle">
-            <div class="things-to-do">Things To Do</div>
-            <div class="things-to-do">Tour</div>
-            <div class="things-to-do">Blog</div>
-          </div>
-          <div class="right">
-            <div class="currency-parent">
-              <b class="currency">USD</b><b class="currency">FAQ</b
-              ><img
-                class="iconnotificationline"
-                alt=""
-                src="./public/iconnotificationline.svg"
-              />
-            </div>
-            <div class="right-child"></div>
-            <div class="image12">
-              <img
-                class="image-child"
-                alt=""
-                src="./public/rectangle-1058@2x.png"
-              />
-            </div>
-          </div>
+    <div class="account_container">
+      <div class="header_nav">
+        <div class="nav_logo">
+            <img src="image/logo.png" alt="">
+            <span>Airtrav</span>
+        </div>
+        <div class="nav_select">
+            <ul>
+                <li><a href="create_trip-page/index.html">Things To Do</a></li>
+                <li><a href="tours-page/index.html">Tour</a></li>
+                <li><a href="blog-page/index.html">Blog</a></li>
+            </ul>
+        </div>
+        <div class="nav_user">
+            <ul>
+                <li><a href="">USD</a></li>
+                <li><a href="FAQ-page/index.html">FAQ</a></li>
+                <li><a href=""><i class="fa-regular fa-bell"></i></a></li>
+                <li><a href="" ><img src="image/user_header.png" alt=""></a></li>
+            </ul> 
         </div>
       </div>
-      <div class="account-settings">
-        <div class="heading">
-          <div class="account-setting1">Account Setting</div>
+      
+      <div class="account-setting">
+        <div class="acc_title">
+          <h2>Account Setting</h2>
         </div>
-        <div class="account-setting2">
-          <div class="card12">
-            <div class="account-setting3">
-              <div class="input">
-                <div class="account-setting-parent">
-                  <div class="account-setting4">
-                    <div class="iconcircle1">
-                      <img
-                        class="iconuserline"
-                        alt=""
-                        src="./public/iconuserline.svg"
-                      />
-                    </div>
-                    <div class="account-setting5">Account Setting</div>
-                  </div>
-                  <img
-                    class="iconsarrow-right-simpleline"
-                    alt=""
-                    src="./public/iconsarrow-right-simpleline.svg"
-                  />
-                </div>
-              </div>
-              <div class="content25">
-                <div class="notificaion">
-                  <div class="notifications">
-                    <img
-                      class="iconlockline"
-                      alt=""
-                      src="./public/iconnotificationline1.svg"
-                    />
-                  </div>
-                  <div class="notification">Notification</div>
-                </div>
-                <div class="notificaion">
-                  <div class="notifications">
-                    <img
-                      class="iconlockline"
-                      alt=""
-                      src="./public/iconlockline.svg"
-                    />
-                  </div>
-                  <div class="notification">Privacy & Security</div>
-                </div>
-              </div>
+        <div class="acc_content">
+          <div class="acc_left">
+            <div class="card_select">
+              <label for="" class="choice_acc">
+                <i class="fa-regular fa-user"></i>
+                <span>Account Setting</span>
+              </label>
+              <label for="" class="choice_not">
+                <i class="fa-regular fa-bell"></i>
+                <span>Notification</span>
+              </label>
+              <label for="" class="choice_pri">
+                <i class="fa-solid fa-lock"></i>
+                <span>Privacy & Security</span>
+              </label>
             </div>
           </div>
-          <div class="my-profile">
-            <div class="contents2">
-              <div class="top14">
-                <div class="my-profile1">My profile</div>
-                <div class="top15">
-                  <div class="profile">
-                    <img
-                      class="mask-group-icon"
-                      alt=""
-                      src="./public/mask-group@2x.png"
-                    />
-                    <div class="button-group">
-                      <div class="button56">
-                        <div class="button57">
-                          <div class="things-to-do">Upload new photo</div>
-                        </div>
-                        <div class="button59">
-                          <div class="email-address">Remove</div>
-                        </div>
-                      </div>
-                      <div class="image-formats-with">
-                        Image formats with max size of 3mb
-                      </div>
-                    </div>
+          <div class="acc_right">
+            <div class="card_profile">
+              
+              <div class="infor">
+                <h3>My profile</h3>
+                <div class="details">
+                  <div class="image_user">
+                    <img src="image/mask-group@2x.png" alt="" >
                   </div>
+                  <div class="load_infor">
+                    <form action="" method="post" class="details_load">
+                      <input type="file" name="" id="file">
+                      <label for="file">Upload file</label>
+                      <button type="reset">Remove</button>
+                    </form>
+                    <h4>Image formats with max size of 3mb</h4>
+                  </div>
+                </div>
+                <div class="infor_acc">
+                  <form action="" method="post">
+                    <div class="name">
+                      <label for="">
+                        <span>First Name</span>
+                        <input type="text" placeholder="Alex">
+                      </label>
+                      <label for="">
+                        <span>Last Name</span>
+                        <input type="text" placeholder="Mecheal">
+                      </label>
+                    </div>
+    
+                    <div class="locate">
+                      <label for="">
+                        <span>Location</span>
+                        <input type="text" placeholder="Alex">
+                      </label>
+                      <label for="">
+                        <span>Date Of Birth</span>
+                        <input type="text" placeholder="Mecheal">
+                      </label>
+                    </div>
+    
+                    <div class="email">
+                      <label for="">
+                        <span>Email Address</span>
+                        <input type="text" placeholder="Alex">
+                      </label>
+                      <label for="">
+                        <span>Gender</span>
+                        <input type="text" placeholder="Mecheal">
+                      </label>
+                    </div>
+    
+                    <input type="submit" value="Save Change">
+                  </form>
                 </div>
               </div>
-              <div class="contents3">
-                <div class="row-1">
-                  <div class="input1">
-                    <div class="things-to-do">First Name</div>
-                    <div class="email1">
-                      <div class="email-address">Alex</div>
-                    </div>
-                  </div>
-                  <div class="input1">
-                    <div class="things-to-do">Last name</div>
-                    <div class="email1">
-                      <div class="email-address">Mecheal</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row-1">
-                  <div class="input1">
-                    <div class="things-to-do">Location</div>
-                    <div class="email1">
-                      <div class="notification">Sylhet, Bangladesh</div>
-                    </div>
-                  </div>
-                  <div class="input1">
-                    <div class="things-to-do">Date Of Birth</div>
-                    <div class="email1">
-                      <div class="notification">07.12.1997</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row-1">
-                  <div class="input1">
-                    <div class="things-to-do">Email address</div>
-                    <div class="email1">
-                      <div class="notification">uihutofficial@gmail.com</div>
-                    </div>
-                  </div>
-                  <div class="input1">
-                    <div class="things-to-do">Gender</div>
-                    <div class="email11">
-                      <div class="things-to-do">Gender</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="button61">
-                  <div class="things-to-do">Save Change</div>
-                </div>
+              <div class="pass">
+                <h3>Password</h3>
+                <form action="">
+                  <label for="">
+                    <span>Current password</span>
+                    <input type="email" value="ulto@22">
+                  </label>
+                  <label for="">
+                    <span>New password</span>
+                    <input type="password" value="ulto@22">
+                  </label>
+                  <label for="">
+                    <span>Confirm password</span>
+                    <input type="password" value="ulto@22">
+                  </label>
+                </form>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="password">
-          <div class="top14">
-            <div class="my-profile1">Password</div>
-            <div class="content26">
-              <div class="input7">
-                <div class="things-to-do">Current password</div>
-                <div class="input8">
-                  <div class="password4">
-                    <div class="password5">uihuto.@22</div>
-                    <div class="iconnotificationline">
-                      <div class="iconseye-online-child"></div>
-                      <img
-                        class="vector-icon1"
-                        alt=""
-                        src="./public/vector.svg"
-                      />
-                    </div>
-                  </div>
+              <div class="social">
+                <div class="social_title">
+                  <h3>Social Networks</h3>
+                  <p>Connect your facebook, twitter and linkedin account to log in quickly.</p>
                 </div>
-              </div>
-              <div class="input7">
-                <div class="things-to-do">New password</div>
-                <div class="input8">
-                  <div class="password4">
-                    <div class="password5">**********</div>
-                    <div class="iconnotificationline">
-                      <div class="iconseye-online-child"></div>
-                      <img
-                        class="vector-icon2"
-                        alt=""
-                        src="./public/vector1.svg"
-                      />
+                <div class="face_book">
+                  <span>Connect to Facebook</span>
+                  <label for="">
+                    <div class="fb_connect">
+                      <i class="fa-brands fa-square-facebook"></i>
+                      <p>You are successfully connected to facebook. you can easily log in using your facebook account.</p>
                     </div>
-                  </div>
+                    <button>Remove</button>
+                  </label>
                 </div>
-              </div>
-              <div class="input7">
-                <div class="things-to-do">Confirm password</div>
-                <div class="input8">
-                  <div class="password4">
-                    <div class="password5">**********</div>
-                    <div class="iconnotificationline">
-                      <div class="iconseye-online-child"></div>
-                      <img
-                        class="vector-icon2"
-                        alt=""
-                        src="./public/vector1.svg"
-                      />
+                <div class="face_book">
+                  <span>Connect to Facebook</span>
+                  <label for="">
+                    <div class="fb_connect">
+                      <i class="fa-brands fa-square-facebook"></i>
+                      <p>You are successfully connected to facebook. you can easily log in using your facebook account.</p>
                     </div>
-                  </div>
+                    <button>Remove</button>
+                  </label>
+                </div>
+                <div class="face_book">
+                  <span>Connect to Facebook</span>
+                  <label for="">
+                    <div class="fb_connect">
+                      <i class="fa-brands fa-square-facebook"></i>
+                      <p>You are successfully connected to facebook. you can easily log in using your facebook account.</p>
+                    </div>
+                    <button>Remove</button>
+                  </label>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="social-networks">
-          <div class="contents4">
-            <div class="tittle14">
-              <div class="my-profile1">Social Networks</div>
-              <div class="connect-your-facebook">
-                Connect your facebook, twitter and linkedin account to log in
-                quickly.
-              </div>
-            </div>
-            <div class="social1">
-              <div class="facebook">
-                <div class="things-to-do">Connect to Facebook</div>
-                <div class="fb">
-                  <div class="content27">
-                    <div class="fb-parent">
-                      <img class="fb-icon" alt="" src="./public/fb.svg" />
-                      <div class="notification">
-                        <p class="you-are-successfully">
-                          You are successfully connected to facebook. you
-                        </p>
-                        <p class="you-are-successfully">
-                          can easily log in using your facebook account.
-                        </p>
-                      </div>
-                    </div>
-                    <div class="button63"><b class="currency">Remove</b></div>
-                  </div>
-                </div>
-              </div>
-              <div class="facebook">
-                <div class="things-to-do">Connect to Twitter</div>
-                <div class="twitter1">
-                  <div class="content27">
-                    <div class="fb-parent">
-                      <div class="fb-icon">
-                        <div class="twitter-child"></div>
-                        <div class="rectangle-parent">
-                          <div class="group-child"></div>
-                          <img
-                            class="vector-icon4"
-                            alt=""
-                            src="./public/vector3.svg"
-                          />
-                        </div>
-                      </div>
-                      <div class="notification">
-                        <p class="you-are-successfully">
-                          You are successfully connected to facebook. you
-                        </p>
-                        <p class="you-are-successfully">
-                          can easily log in using your twitter account.
-                        </p>
-                      </div>
-                    </div>
-                    <div class="button65"><b class="currency">Remove</b></div>
-                  </div>
-                </div>
-              </div>
-              <div class="facebook">
-                <div class="things-to-do">Connect to Linkedin</div>
-                <div class="twitter1">
-                  <div class="content27">
-                    <div class="fb-parent">
-                      <div class="fb-icon">
-                        <div class="twitter-child"></div>
-                        <div class="rectangle-parent">
-                          <div class="fb-child"></div>
-                          <img
-                            class="linkedin-icon"
-                            alt=""
-                            src="./public/linkedin.svg"
-                          />
-                        </div>
-                      </div>
-                      <div class="notification">
-                        <p class="you-are-successfully">
-                          You are successfully connected to facebook. you
-                        </p>
-                        <p class="you-are-successfully">
-                          can easily log in using your linkedin account.
-                        </p>
-                      </div>
-                    </div>
-                    <div class="button65"><b class="currency">Remove</b></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        
       </div>
-      <div class="footer1">
-        <div class="contents5">
-          <div class="contents6">
-            <div class="services3">
-              <div class="left1">
-                <div class="logo4">
-                  <div class="logo3">
-                    <img
-                      class="logo-icon1"
-                      alt=""
-                      src="./public/logo-icon2.svg"
-                    />
-                  </div>
-                  <div class="tittle13">Airtrav</div>
+  
+      <div class="footer_container">
+        <div class="footer_content">
+            <div class="footer_infor">
+                <div class="logo_infor">
+                    <img src="image/logo.png" alt="">
+                    <span>Airtrav</span>
                 </div>
-                <div class="subscrive-button1">
-                  <div class="similarly-a-loan1">
-                    Similarly, a loan taken out to buy a car may be secured by
-                    the car. The duration of the loan.
-                  </div>
-                  <div class="search-input1">
-                    <div class="search-bar1">
-                      <div class="things-to-do">Enter your email</div>
-                      <div class="iconcircle2">
-                        <img
-                          class="iconsarrow-right-2line1"
-                          alt=""
-                          src="./public/iconsarrow-right-2line.svg"
-                        />
-                      </div>
-                    </div>
-                  </div>
+                <p>Similarly, a loan taken out to buy a car may be secured by the car. The duration of the loan.</p>
+                <div class="input_footer">
+                    <label for="" class="input_email">
+                        <input type="text" placeholder="Enter your email">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </label>
                 </div>
-              </div>
-              <div class="services4">
-                <div class="my-profile1">Services</div>
-                <div class="trip-planner-group">
-                  <div class="password5">Trip Planner</div>
-                  <div class="password5">Tour Planning</div>
-                  <div class="password5">Tour Guide</div>
-                  <div class="password5">Tour Package</div>
-                  <div class="password5">Tour advice</div>
-                </div>
-              </div>
-              <div class="support2">
-                <div class="my-profile1">Support</div>
-                <div class="account-group">
-                  <div class="password5">Account</div>
-                  <div class="password5">Legal</div>
-                  <div class="password5">Contact</div>
-                  <div class="password5">Terms & Condition</div>
-                  <div class="password5">Privacy Policy</div>
-                </div>
-              </div>
-              <div class="business2">
-                <div class="my-profile1">Business</div>
-                <div class="success-group">
-                  <div class="password5">Success</div>
-                  <div class="password5">About Locato</div>
-                  <div class="password5">Blog</div>
-                  <div class="password5">Information</div>
-                  <div class="password5">Travel Guide</div>
-                </div>
-              </div>
             </div>
-            <div class="devider1"></div>
-          </div>
-          <div class="botom1">
-            <div class="notification">
-              Copyright© 2021 UIHUT LLC. All rights reserved
+            <div class="footer_service">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="">Trip Planner</a></li>
+                    <li><a href="">Tour Planning</a></li>
+                    <li><a href="">Tour Guide</a></li>
+                    <li><a href="">Tour Package</a></li>
+                    <li><a href="">Tour Advice</a></li>
+                </ul>
             </div>
-            <div class="social2">
-              <img
-                class="iconnotificationline"
-                alt=""
-                src="./public/iconfacebookline.svg"
-              /><img
-                class="iconnotificationline"
-                alt=""
-                src="./public/iconlinkdlneline.svg"
-              />
-              <div class="iconnotificationline">
-                <div class="iconseye-online-child"></div>
-                <img class="twitter-icon1" alt="" src="./public/twitter.svg" />
-              </div>
-              <img
-                class="iconnotificationline"
-                alt=""
-                src="./public/iconinstragramline.svg"
-              />
+            <div class="footer_support">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="">Account</a></li>
+                    <li><a href="">Legal</a></li>
+                    <li><a href="contact_us-page/index.html">Contact</a></li>
+                    <li><a href="">Terms & Condition</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                </ul>
             </div>
-          </div>
+            <div class="footer_business">
+                <h3>Business</h3>
+                <ul>
+                    <li><a href="">Success</a></li>
+                    <li><a href="">About Locate</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Information</a></li>
+                    <li><a href="travel_guide-page/index.html">Travel Guide</a></li>
+                </ul>
+            </div>
+        </div>
+  
+        <div class="footer_socials">
+            <div class="adds_social">
+                <p>Copyright© 2021 UIHUT LLC. All rights reserved</p>
+            </div>
+            <div class="list_socials">
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+            </div>
         </div>
       </div>
     </div>
+    
+   
+
+
+    <script src="https://kit.fontawesome.com/013b757403.js" crossorigin="anonymous"></script>
   </body>
 </html>

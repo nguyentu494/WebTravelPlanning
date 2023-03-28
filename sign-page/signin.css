@@ -114,8 +114,23 @@ body{
     outline: none;
     border: 1px solid #555;
 }
+.details input:invalid{
+    border: 2px solid red;
+    /* animation: shake 0.2s 2; */
+}
+/* @keyframes shake{
+    25%{
+        translate: 6px 0;
+    }
+    50%{
+        translate: -6px 0;
+    }
+    75%{
+        translate: 6px 0;
+    }
+} */
 .details input:focus{
-    border: 1px solid #3B71FE;
+    border: 2px solid #3B71FE;
 }
 .details span{
     font-weight: 600;
