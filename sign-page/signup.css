@@ -53,6 +53,13 @@ body{
     align-items: center;
     gap : 6px;
 }
+.sign-up-brand a{
+    display: flex; 
+    align-items: center;
+    gap: 5px;
+    color: #333;
+    text-decoration: none;
+}
 .sign-up-brand span{
     font-weight: bold;
     font-size: 1.4em;

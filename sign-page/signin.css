@@ -43,6 +43,13 @@ body{
     font-weight: bold;
     font-size: 1.5em;
 }
+.logo_header a{
+    display: flex;
+    align-items:center;
+    text-decoration: none;
+    gap: 5px;
+    color: #333;
+}
 .card_left h2{
     font-size: 2em;
     margin-top : 20px;
