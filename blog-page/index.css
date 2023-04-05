@@ -186,7 +186,9 @@ body{
 }
 .image_adds img{
   width: 300px;
-  object-fit: contain;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
 }
 .card_content{
   display: flex;
@@ -232,7 +234,26 @@ body{
   font-size: 1.3em;
   margin-top : 50px
 }
+.select_btn button:hover{
+  background-color:blue;
+}
 
+.card:nth-child(2) .status span{
+  background-color: #FFEFF1;
+  color: #F65540;
+}
+.card:nth-child(3) .status span{
+  background-color: #EBF1FF;
+  color: #3B71FE;
+}
+.card:nth-child(4) .status span{
+  background-color: #FFEFF1;
+  color: #F65540;
+}
+.card:nth-child(5) .status span{
+  background-color: #EEF9F2;
+  color: #58C27D;
+}
 .footer_container{
   position: relative;
   height: 400px;

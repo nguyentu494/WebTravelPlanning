@@ -40,6 +40,7 @@ body{
 }
 .card_select label{
   padding: 10px;
+  cursor: pointer;
 }
 .choice_acc{
   background-color: #EBF1FF;
@@ -219,24 +220,38 @@ label input{
 .social_title p{
   line-height: 40px;
 }
-.face_book{
+.face_book,
+.twitter,
+.linkedin{
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.face_book span{
+.face_book span,
+.twitter span,
+.linkedin span{
   font-size: 1em;
   color: #555;
 }
-.face_book label{
+.face_book label,
+.twitter label ,
+.linkedin label{
   display: flex;
   align-items: center;
   padding: 17px 28px 17px 24px;
   border-radius: 10px;
   background-color: #EEF9F2;
   justify-content: space-between;
+  border: 1px solid #58C27D;
 }
-.face_book label button{
+.face_book label:hover,
+.twitter label:hover ,
+.linkedin label:hover{
+  background-color: rgb(232, 240, 232);
+}
+.face_book label button,
+.twitter label button,
+.linkedin label button{
   outline: none;
   border: 1px solid #F65540;
   color: #F65540;
@@ -254,9 +269,16 @@ label input{
   font-size: 2.3em;
   color: #3B71FE;
 }
+.twitter i{
+  color: rgb(20, 156, 219);
+}
+.linkedin i{
+  color: rgb(56, 118, 211);
+}
 .fb_connect p{
   font-size: 0.9em;
   color: #63646b;
+  padding-right: 130px;
 }
 
 .header_nav{
@@ -312,12 +334,13 @@ label input{
   content: "";
   position: absolute;
   width: 100%;
-  height: 2px;
+  height: 4px;
   background-color: #333;
   bottom : -3px;
   transform: scale(0);
   transition: transform 0.45s ease-in-out;
   transform-origin: right;
+  top: 44px;
 }
 .nav_select ul li a:hover:before{
   transform: scale(1);

@@ -36,6 +36,15 @@
     text-decoration: none;
     color: black;
 }
+.item1:hover{
+    background-color: rgb(194, 229, 194);
+}
+.item2:hover{
+    background-color: rgb(236, 216, 180);
+}
+.item3:hover{
+    background-color: rgba(113, 145, 240, 0.2);
+}
 .item1{
     border-radius: 10px;
     background-color: rgba(59, 210, 59,0.2);

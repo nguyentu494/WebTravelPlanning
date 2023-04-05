@@ -6,7 +6,6 @@
 body{
   font-family: 'Inter',sans-serif;
 }
-
 .header_nav{
   display : flex;
   justify-content: space-around;
@@ -74,7 +73,7 @@ body{
   transform-origin: right;
   top: 44px;
 }
-.nav_select ul li:last-child a:after{
+.nav_select ul li:nth-child(2) a:after{
   content: "";
   width: 100%;
   position: absolute;
@@ -82,7 +81,7 @@ body{
   bottom: 0;
   top: 44px;
 }
-.nav_select ul li:not(:last-child) a:hover:before{
+.nav_select ul li:not(:nth-child(2)) a:hover:before{
   transform: scale(1);
   transform-origin: left;
 }
@@ -115,6 +114,7 @@ body{
  padding : 0 20px;
  transform: scale(0.6);
 }
+
 .review-tour{
   margin-left: 176px;
   margin-right: 176px;
@@ -122,25 +122,26 @@ body{
 
 .review-tours{
   display: grid;
-  gap: 20px;
-  grid-template-columns: auto auto auto;
+  gap: 30px;
+  grid-template-columns: 375px 375px 375px;
 }
 
 .title{
   margin-top: 128px;
   line-height: 45px;
   font-weight: 600;
-  font-size: 30px;
+  font-size: 2em;
   color: #353945;
 }
 
 .img-tour{
   position: relative;
+  max-height: 250px;
+  overflow: hidden;
 }
 
 .tour{
-  width: 370px;
-  height: 239px;
+  width: 100%;
   
 }
 
@@ -163,36 +164,45 @@ body{
   line-height: 28px;
   font-weight: 500;
   font-size: 18px;
-  margin-top: 26px;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
 .discri-tour{
   margin-top: 42px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+  overflow:hidden;
+  padding-bottom: 20px;
+  border-radius: 20px 20px 10px 10px;
+}
+.discri-tour img{
+  border-top-left-radius: 20px; 
+  border-top-right-radius: 20px;
+  transition: all 0.5s ease;
+  
+}
+.discri-tour img:hover{
+  transform: scale(1.1);
 }
 
 .review{
   display: flex;
-  width: 370px;
+  /* width: 370px; */
   justify-content: space-between;
   margin-top: 10px;
   font-size: 14px;
   color: #3b3e44;
-  font-family: Roboto;
+  font-family: 'Roboto',sans-serif;
   margin-bottom: 26px;
+  padding:0 5px;
+  align-items: center;
 }
 
 .review-star{
   display: flex;
   align-items: center;
-  
-}
-
-.review-star p{
-  transform: translateY(1px);
-}
-
-.duration{
-  transform: translateY(6px);
+  justify-content: center;
+  line-height: 0;
 }
 
 .price-tour{
@@ -203,6 +213,7 @@ body{
   text-decoration: none;
   color: white;
   font-size: 14px;
+  margin-left: 10px;
 }
 
 .see{
@@ -220,6 +231,9 @@ body{
 .seeTours{
   margin-top: 100px;
   text-align: center;
+}
+.seeTours .see:hover{
+  background-color: blue;
 }
 
 .footer_container{
@@ -346,71 +360,3 @@ body{
   color: #777E90;
 }
 
-.faq_content{
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-  margin:100px 200px;
-}
-.faq_content h2{
-  font-size: 2em;
-  margin-bottom: 30px;
-}
-details{
-  display: flex;
-  flex-direction: column;
-  border: 1px solid #B1B5C3;
-  border-radius: 10px;
-  padding: 14px 21px 14px 21px;
-  width: 820px;
-}
-summary{
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-details p{
-  line-height:25px;
-  margin-top: 20px;
-  color: #B1B5C3;
-  font-size: 0.9em;
-}
-summary::after {
-  content: "+";
-  /* display: inline-block; */
-  width: 1rem;
-  height: 1rem;
-  margin-right: 0.5rem;
-  cursor: pointer;
-  color: #3B71FE;
-  font-size: 1.4em;
-  display: flex;
-  align-items: center;
-}
-details[open] summary::after {
-  content: "-";
-}
-details summary{
-  font-weight: 600;
-  /* padding-right: 200px; */
-}
-.ques{
-  padding: 14px 21px 14px 21px;
-  border-radius: 10px;
-  background-color: #3B71FE;
-  width: 300px;
-  color: #fff;
-  margin-top: 30px;
-}
-.header_faq{
-  display: flex;
-  align-items: center;
-  justify-content:space-between;
-}
-.header_faq .add{
-  background-color: #3B71FE;
-  border-radius: 10px;
-  padding:14px 21px 14px 21px;
-  color: #fff;
-}
