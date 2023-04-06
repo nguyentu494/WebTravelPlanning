@@ -298,6 +298,11 @@ label input{
   display : flex;
   align-items: center;
 }
+.header_nav a{
+  text-decoration: none;
+  color: #333;
+}
+
 .nav_logo span{
   font-weight: 800;
   font-size: 20px;

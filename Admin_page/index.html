@@ -5,23 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!----======== CSS ======== -->
     <link rel="stylesheet" href="style.css">
-     
-    <!----===== Iconscout CSS ===== -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
-    <!--<title>Admin Dashboard Panel</title>--> 
+    <title>Admin Dashboard - Airtrav</title>
+    <link rel="shortcut icon" href="image/logo.png" type="image/png">
 </head>
 <body>
     <nav>
         <div class="logo-name">
             <div class="logo-image">
-                <!--<img src="images/logo.png" alt="">-->
+                <img src="image/logo.png" alt="">
             </div>
-
-            <span class="logo_name">CodingLab</span>
+            <span class="logo_name">Airtrav</span>
         </div>
 
         <div class="menu-items">
@@ -32,23 +28,24 @@
                 </a></li>
                 <li><a href="#">
                     <i class="uil uil-files-landscapes"></i>
-                    <span class="link-name">Content</span>
+                    <span class="link-name">Details</span>
                 </a></li>
                 <li><a href="#">
                     <i class="uil uil-chart"></i>
-                    <span class="link-name">Analytics</span>
-                </a></li>
-                <li><a href="#">
-                    <i class="uil uil-thumbs-up"></i>
-                    <span class="link-name">Like</span>
-                </a></li>
-                <li><a href="#">
-                    <i class="uil uil-comments"></i>
-                    <span class="link-name">Comment</span>
+                    <span class="link-name">Clients</span>
                 </a></li>
                 <li><a href="#">
                     <i class="uil uil-share"></i>
-                    <span class="link-name">Share</span>
+                    <span class="link-name">My site</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-comments"></i>
+                    <span class="link-name">Messages</span>
+                </a></li>
+                <li><a href="#">
+                    
+                    <i class="uil uil-setting"></i>
+                    <span class="link-name">Setting</span>
                 </a></li>
             </ul>
             
@@ -80,8 +77,14 @@
                 <i class="uil uil-search"></i>
                 <input type="text" placeholder="Search here...">
             </div>
-            
-            <!--<img src="images/profile.jpg" alt="">-->
+            <div class="top_header">
+                <i class="uil uil-bell"></i>
+                <div class="user_details">
+                    <img src="image/user_header.png" alt="">
+                    <span>Victor Adam.</span>
+                    <i class="uil uil-angle-down"></i>
+                </div>
+            </div>
         </div>
 
         <div class="dash-content">
@@ -94,18 +97,38 @@
                 <div class="boxes">
                     <div class="box box1">
                         <i class="uil uil-thumbs-up"></i>
-                        <span class="text">Total Likes</span>
-                        <span class="number">50,120</span>
+                        <span class="text">Sales Performance</span>
+                        <div class="details">
+                            <div class="views">
+                                <i class="uil uil-thumbs-up"></i>
+                                <div class="detail_right">
+                                    <span>Views</span>
+                                    <h3>20,751</h3>
+                                </div>
+                            </div>
+                            <div class="sales">
+                                <i class="uil uil-thumbs-up"></i>
+                                <div class="detail_right">
+                                    <span>Sales</span>
+                                    <h3>2,563</h3>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="box box2">
                         <i class="uil uil-comments"></i>
-                        <span class="text">Comments</span>
-                        <span class="number">20,120</span>
+                        <span class="text">Waiting Lists</span>
+                        <span class="number">1029</span>
                     </div>
                     <div class="box box3">
                         <i class="uil uil-share"></i>
-                        <span class="text">Total Share</span>
+                        <span class="text">Completed Flights</span>
                         <span class="number">10,120</span>
+                    </div>
+                    <div class="box box4">
+                        <i class="uil uil-share"></i>
+                        <span class="text">Total Revenue</span>
+                        <span class="number">$840</span>
                     </div>
                 </div>
             </div>
@@ -113,7 +136,7 @@
             <div class="activity">
                 <div class="title">
                     <i class="uil uil-clock-three"></i>
-                    <span class="text">Recent Activity</span>
+                    <span class="text">Recent Activity - Booking</span>
                 </div>
 
                 <div class="activity-data">

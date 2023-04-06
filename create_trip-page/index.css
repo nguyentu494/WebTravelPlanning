@@ -309,12 +309,12 @@ body{
 .top .chk_trip input[type="checkbox"]{
    width: 25px;
    height: 25px;
-   background-color:red;
+   accent-color: #3B71FE;
    cursor: pointer;
 }
-#check_trip input[type="checkbox"]:checked{
+/* #check_trip input[type="checkbox"]:checked{
   background-color: #3B71FE !important;
-}
+} */
 
 .bottom .chk-trip input[type="checkbox"]{
    width: 25px;
