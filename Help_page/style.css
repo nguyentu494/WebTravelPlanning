@@ -290,12 +290,12 @@ body{
     margin-top: 20px;
   }
   .search_box input{
-    padding: 8px 14px;
-    /* padding: 8px 14px; */
+    padding:12px 15px;
     width: 470px;
     border-radius: 4px;
     outline: none;
     border: none;
+    background-color: #f1f3f7da;
   }
   .search_box input[type="text"]{
     padding-left: 40px;
@@ -303,7 +303,7 @@ body{
   }
   .search_box i{
     position: absolute;
-    top: 7px;
+    top: 10px;
     left: 10px;
     font-size: 1.4em;
     color: #555;
@@ -315,7 +315,7 @@ body{
   }
   .service_chat{
     margin: 20px 200px;
-    box-shadow: 0 2px 10px #555;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     border-radius: 5px;
     padding: 20px;
   }
@@ -324,6 +324,7 @@ body{
   }
   .service-select{
     position: relative;
+    margin-top: 20px;
   }
   .service-select ul{
     display: flex;
@@ -343,6 +344,24 @@ body{
     align-items: center;
     gap: 10px;
   }
+  .service-select ul li:first-child{
+    background-color: #555;
+  }
+  .service-select ul li:first-child a span,
+  .service-select ul li:first-child a i
+  {
+    color: #fff;
+  }
+  .service-select ul li:first-child::before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    bottom : 0;
+    background-color: #555;
+    transform: translateY(50%) rotateZ(45deg);
+  }
+
   .service_ques{
     display: grid;
     grid-template-columns: repeat(2 , 1fr);
@@ -353,12 +372,19 @@ body{
     display:flex;
     align-items: center;
     justify-content:space-between;
-    border: 1px solid #555;
-    padding: 10px;
+    border: 1px solid #c9c1c1;
+    padding: 15px;
     border-radius: 3px;
+    transition: all 0.5s ease;
+    color: #757171;
   }
+  .service_ques label:hover{
+    color: #3B71FE;
+  }
+
   .faq{
     line-height: 50px;
+    margin-top: 20px
   }
   .faq-select{
     position: relative;
@@ -377,11 +403,18 @@ body{
     text-decoration: none;
     color: #555;
   }
+
+  .faq-select ul li:hover{
+    background-color: rgba(224, 224, 240, 0.811);
+  }
+  .faq-select ul li a:hover{
+    color: #3B71FE;
+  }
   .infor_adds{
     display:flex;
     flex-direction: column;
     gap: 10px;
-    box-shadow: 0 2px 5px #555;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     margin: 0 200px;
     padding: 20px 0;
     border-radius: 5px;
@@ -390,7 +423,7 @@ body{
   }
   .details_help{
     margin: 20px 200px 20px 200px;
-    box-shadow: 0 2px 5px #555;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     border-radius: 5px;
     padding: 20px 60px;
     display: flex;
@@ -472,4 +505,13 @@ body{
     font-size: 600;
     font-size: 1.3em;
     border-radius: 5px;
+  }
+  .mess textarea{
+    max-height: 100px;
+    overflow-y: auto;
+    max-width: 560px;
+    background-color: rgba(235, 235, 247, 0.491);
+    border-radius: 2px;
+    outline: none;
+    border: none;
   }

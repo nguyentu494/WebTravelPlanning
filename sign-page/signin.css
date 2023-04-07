@@ -162,6 +162,9 @@ body{
     width: 20px;
     height: 20px;
 }
+.chk_remember input:checked{
+    accent-color: #3B71FE;
+}
 .infor button{
     background-color: #3B71FE;
     color:#fff;

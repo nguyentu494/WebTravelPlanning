@@ -330,41 +330,76 @@ nav.close ~ .dashboard .top{
     margin-left: 10px;
 }
 .dash-content .boxes{
-    display: flex;
+    display: grid;
+    grid-template-columns: 60% 38%;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     flex-wrap: wrap;
+    column-gap: 15px;
 }
-.dash-content .boxes .box{
+.dash-content .boxes .box1{
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 12px;
-    width: calc(100% / 3 - 15px);
+    /* width: calc(100% / 3 - 15px); */
     padding: 15px 20px;
     background-color: var(--box1-color);
     transition: var(--tran-05);
+    height: 100%;
 }
-.boxes .box i{
+.boxes i{
     font-size: 35px;
     color: var(--text-color);
 }
-.boxes .box .text{
+.boxes .second{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.boxes .details{
+    display: flex;
+    align-items: center;
+}
+.boxes .details .views,
+.boxes .details .sales{
+    display: flex;
+    align-items: center;
+}
+.boxes .text{
     white-space: nowrap;
     font-size: 18px;
     font-weight: 500;
     color: var(--text-color);
 }
-.boxes .box .number{
+.boxes .number{
     font-size: 40px;
     font-weight: 500;
     color: var(--text-color);
 }
-.boxes .box.box2{
+.boxes .box2{
+    border-radius: 12px;
     background-color: var(--box2-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 20px;
 }
-.boxes .box.box3{
+.boxes .box3{
+    border-radius: 12px;
     background-color: var(--box3-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 20px;
+}
+.boxes .box4{
+    border-radius: 12px;
+    background-color: var(--box1-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 20px;
 }
 .dash-content .activity .activity-data{
     display: flex;
@@ -393,7 +428,7 @@ nav.close ~ .dashboard .top{
     color: var(--text-color);
 }
 
-@media (max-width: 1000px) {
+/* @media (max-width: 1000px) {
     nav{
         width: 73px;
     }
@@ -435,9 +470,9 @@ nav.close ~ .dashboard .top{
     .activity .activity-data{
         overflow-X: scroll;
     }
-}
+} */
 
-@media (max-width: 780px) {
+/* @media (max-width: 780px) {
     .dash-content .boxes .box{
         width: calc(100% / 2 - 15px);
         margin-top: 15px;
@@ -486,5 +521,5 @@ nav.close ~ .dashboard .top{
     nav.close ~ .dashboard .top{
         left: 0;
         width: 100%;
-    }
+    } */
 }

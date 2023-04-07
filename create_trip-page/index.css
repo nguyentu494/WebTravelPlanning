@@ -312,14 +312,13 @@ body{
    accent-color: #3B71FE;
    cursor: pointer;
 }
-/* #check_trip input[type="checkbox"]:checked{
-  background-color: #3B71FE !important;
-} */
+
 
 .bottom .chk-trip input[type="checkbox"]{
    width: 25px;
    height: 25px;
    cursor: pointer;
+   accent-color: #3B71FE;
 }
 
 .chk_trip input[type="checkbox"]:checked + span {

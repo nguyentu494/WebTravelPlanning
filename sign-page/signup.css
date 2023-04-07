@@ -105,6 +105,9 @@ body{
     height: 25px;
     outline: none;
 }
+.check input:checked{
+    accent-color: #3B71FE;
+}
 .sign-up-login{
     padding: 15px 20px;
     border: none;
