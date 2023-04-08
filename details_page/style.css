@@ -359,6 +359,7 @@
     flex-direction: column;
     box-shadow: 0 2px 5px #555;
     padding: 10px 20px;
+    border-radius: 5px;
   }
   .infor_travel .intro{
     margin-top: 20px;
@@ -403,6 +404,7 @@
     flex-direction: column;
     margin-top: 30px;
     padding: 40px;
+    border-radius: 5px;
   }
   .highlight h3{
     font-size: 1.7em;
@@ -441,6 +443,7 @@
     box-shadow:0 2px 5px #555;
     padding: 40px;
     margin-top: 20px;
+    border-radius: 5px;
   }
   .notes h3{
     font-size: 1.5em;
@@ -480,7 +483,6 @@
   .book_container{
     display: flex;
     flex-direction: column;
-
   }
   .book_contact{
     display: flex;
@@ -521,11 +523,16 @@
     padding: 15px;
     position: sticky;
     top: 80px;
+    border-radius: 5px;
   }
   .infor_book{
     display: flex;
     margin-top: 20px;
     gap: 10px;
+  }
+  .infor_book p{
+    font-weight: 600;
+    line-height:20px;
   }
   .infor_book img{
     width: 120px;
@@ -554,7 +561,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-top: 15px;
+    margin-top: 20px;
   }
   .infor_booking label{
     display:flex;
@@ -564,6 +571,11 @@
   .infor_booking label i{
     border: 1px solid #555;
     padding: 5px;
+    cursor: pointer;
+    transition: all 0.55s ease;
+  }
+  .infor_booking label i:hover{
+    background-color: rgb(222, 222, 241);
   }
   .discrea{
     display: flex;
@@ -584,7 +596,6 @@
     padding: 5px 10px;
     border-radius: 5px;
     outline: none;
-
   }
   .discount button{
     background-color: #3B71FE;
@@ -593,6 +604,10 @@
     border: none;
     color: #fff;
     border-radius: 4px;
+    cursor: pointer;
+  }
+  .discount button:hover{
+    background-color: blue;
   }
   .total h4{
     font-size: 1.3em;
@@ -606,4 +621,8 @@
     font-weight: 700;
     border-radius: 5px;
     font-size: 1.4em;
+    cursor: pointer;
+  }
+  .book_submit:hover{
+    background-color: blue;
   }

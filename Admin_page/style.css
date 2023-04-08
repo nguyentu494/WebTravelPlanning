@@ -17,6 +17,7 @@
     --box1-color: #4DA3FF;
     --box2-color: #FFE6AC;
     --box3-color: #E7D1FC;
+    --box4-color: #C7E9B0;
     --title-icon-color: #fff;
     
     /* ====== Transition ====== */
@@ -39,6 +40,7 @@ body.dark{
     --box1-color: #3A3B3C;
     --box2-color: #3A3B3C;
     --box3-color: #3A3B3C;
+    --box4-color: #3A3B3C;
     --title-icon-color: #CCC;
 }
 /* === Custom Scroll Bar CSS === */
@@ -395,7 +397,7 @@ nav.close ~ .dashboard .top{
 }
 .boxes .box4{
     border-radius: 12px;
-    background-color: var(--box1-color);
+    background-color: var(--box4-color);
     display: flex;
     flex-direction: column;
     align-items: center;
