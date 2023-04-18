@@ -38,23 +38,23 @@
             <form action="" class="infor">
                 <label for="" class="details">
                     <span>First Name</span>
-                    <input type="text" placeholder="Enter your first name" pattern="[a-z]*">
+                    <input type="text" placeholder="Enter your first name" id="fname">
                 </label>
                 <label for=""class="details">
                     <span>Last Name</span>
-                    <input type="text" placeholder="Enter your last name" pattern="[a-z]*">
+                    <input type="text" placeholder="Enter your last name" id="lname">
                 </label>
                 <label for=""class="details">
                     <span>Email</span>
-                    <input type="email" placeholder="Email Address">
+                    <input type="email" placeholder="Email Address" id="email">
                 </label>
                 <label for=""class="details">
                     <span>Password</span>
-                    <input type="password" placeholder="Password">
+                    <input type="password" placeholder="Password" id="pass">
                 </label>
                 <label for=""class="details">
                     <span>Confirm Password</span>
-                    <input type="password" placeholder="Password">
+                    <input type="password" placeholder="Password" id="repass">
                 </label>
                 <div class="remember_me">
                     <label for="" class="chk_remember" id="check_remem">
@@ -63,7 +63,7 @@
                     </label>
                     <a href="">Forgot your password?</a>
                 </div>
-                <button>Sign in</button>
+                <button href onclick="chk_regex()">Sign in</button>
             </form>
         </div>
         
@@ -74,4 +74,5 @@
   
 
 </body>
+<script src="/sign-page/signin.js"></script>
 </html>
