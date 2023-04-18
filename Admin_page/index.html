@@ -6,10 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
     <title>Admin Dashboard - Airtrav</title>
     <link rel="shortcut icon" href="image/logo.png" type="image/png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 </head>
 <body>
     <nav>
@@ -96,18 +98,32 @@
 
                 <div class="boxes">
                     <div class="box1">
-                        <i class="uil uil-thumbs-up"></i>
-                        <span class="text">Sales Performance</span>
+                        <!-- <i class="uil uil-thumbs-up"></i> -->
+                        <div class="header_box1">
+                            <div class="infor_box1">
+                                <span class="text">Sales Performance</span>
+                                <h5>Visited 10 of 100 countries</h5>
+                            </div>
+                            <label for="">
+                                <i class="uil uil-export"></i>
+                                <span>Export</span>
+                            </label>
+                        </div>
+                        
+                        <div class="chart">
+                            <canvas id="myChart"></canvas>
+                        </div>
+                        
                         <div class="details">
                             <div class="views">
-                                <i class="uil uil-thumbs-up"></i>
+                                <img src="image/views.svg" alt="">
                                 <div class="detail_right">
                                     <span class="text">Views</span>
                                     <span class="number">20,751</span>
                                 </div>
                             </div>
                             <div class="sales">
-                                <i class="uil uil-thumbs-up"></i>
+                                <img src="image/ticket.svg" alt="">
                                 <div class="detail_right">
                                     <span class="text">Sales</span>
                                     <span class="number">2,563</span>
@@ -117,19 +133,28 @@
                     </div>
                     <div class=" second">
                         <div class="box2">
-                            <i class="uil uil-comments"></i>
-                            <span class="text">Waiting Lists</span>
-                            <span class="number">1029</span>
+                            <!-- <i class="uil uil-comments"></i> -->
+                            <div class="infor_right">
+                                <span class="text">Waiting Lists</span>
+                                <span class="number">1029</span>
+                            </div>
+                            <img src="image/schedule-management.jpg" alt="">
                         </div>
                         <div class="box3">
-                            <i class="uil uil-share"></i>
-                            <span class="text">Completed Flights</span>
-                            <span class="number">10,120</span>
+                            <!-- <i class="uil uil-share"></i> -->
+                            <div class="infor_right">
+                                <span class="text">Completed Flights</span>
+                                <span class="number">10,120</span>
+                            </div>
+                            <img src="image/ticket (2).png" alt="">
                         </div>
                         <div class="box4">
-                            <i class="uil uil-share"></i>
-                            <span class="text">Total Revenue</span>
-                            <span class="number">$840</span>
+                            <!-- <i class="uil uil-share"></i> -->
+                            <div class="infor_right">
+                                <span class="text">Total Revenue</span>
+                                <span class="number">$840</span>
+                            </div>
+                            <img src="image/crowdfunding-chart.svg" alt="">
                         </div>
                     </div>
                 </div>
@@ -137,8 +162,23 @@
 
             <div class="activity">
                 <div class="title">
-                    <i class="uil uil-clock-three"></i>
-                    <span class="text">Recent Activity - Booking</span>
+                    <div class="header">
+                        <label for="">
+                            <i class="uil uil-clock-three"></i>
+                            <span class="text">All Bookings</span>
+                        </label>
+                        <div class="select_bookings">
+                            <label for="">
+                                <!-- <span>Departure</span> -->
+                                <!--icon-->
+                            </label>
+                        </div>
+
+                    </div>
+                    <label for="" class="add">
+                        <i class="uil uil-plus"></i>
+                        <span>Add Plan</span>
+                    </label>
                 </div>
 
                 <div class="activity-data">
@@ -163,7 +203,7 @@
                         <span class="data-list">ganeshchand@gmail.com</span>
                     </div>
                     <div class="data joined">
-                        <span class="data-title">Joined</span>
+                        <span class="data-title">Date</span>
                         <span class="data-list">2022-02-12</span>
                         <span class="data-list">2022-02-12</span>
                         <span class="data-list">2022-02-13</span>
@@ -173,24 +213,45 @@
                         <span class="data-list">2022-02-15</span>
                     </div>
                     <div class="data type">
-                        <span class="data-title">Type</span>
-                        <span class="data-list">New</span>
-                        <span class="data-list">Member</span>
-                        <span class="data-list">Member</span>
-                        <span class="data-list">New</span>
-                        <span class="data-list">Member</span>
-                        <span class="data-list">New</span>
-                        <span class="data-list">Member</span>
+                        <span class="data-title">Destination</span>
+                        <span class="data-list">BangKok, ThaiLand</span>
+                        <span class="data-list">Da Nang, Vietnam</span>
+                        <span class="data-list">Phu Quoc, Vietnam</span>
+                        <span class="data-list">Bali, Indonesia</span>
+                        <span class="data-list">Barcelona, Spain</span>
+                        <span class="data-list">Paris, France</span>
+                        <span class="data-list">Istanbul, Turkey</span>
                     </div>
                     <div class="data status">
-                        <span class="data-title">Status</span>
-                        <span class="data-list">Liked</span>
-                        <span class="data-list">Liked</span>
-                        <span class="data-list">Liked</span>
-                        <span class="data-list">Liked</span>
-                        <span class="data-list">Liked</span>
-                        <span class="data-list">Liked</span>
-                        <span class="data-list">Liked</span>
+                        <span class="data-title">Action</span>
+                        <span class="data-list">
+                            <label for="" class="view">View</label>
+                            <label for="" class="delete">Delete</label>
+                        </span>
+                        <span class="data-list">
+                            <label for="" class="view">View</label>
+                            <label for="" class="delete">Delete</label>
+                        </span>
+                        <span class="data-list">
+                            <label for="" class="view">View</label>
+                            <label for="" class="delete">Delete</label>
+                        </span>
+                        <span class="data-list">
+                            <label for="" class="view">View</label>
+                            <label for="" class="delete">Delete</label>
+                        </span>
+                        <span class="data-list">
+                            <label for="" class="view">View</label>
+                            <label for="" class="delete">Delete</label>
+                        </span>
+                        <span class="data-list">
+                            <label for="" class="view">View</label>
+                            <label for="" class="delete">Delete</label>
+                        </span>
+                        <span class="data-list">
+                            <label for="" class="view">View</label>
+                            <label for="" class="delete">Delete</label>
+                        </span>
                     </div>
                 </div>
             </div>
