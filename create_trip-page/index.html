@@ -59,10 +59,11 @@
               <input type="checkbox" id="check_trip" checked>
               <span>Show site trips</span>
             </label>
-            <label for="" class="chk_trip">
-              <input type="checkbox" >
-              <span>Show items in my trips</span>
+            <label for="show-my-trip" class="chk_trip">
+              <input type="checkbox" id="show-my-trip">
+              <span >Show items in my trips</span>
             </label>
+            
           </div>
           <div class="bottom ">
             <h3>Activity type</h3>
@@ -112,7 +113,7 @@
             </label>
           </div>
         </div>
-        <div class="things_right">
+        <div class="things_right" id="thing_right_items">
           <div class="card">
             <div class="image_adds">
               <img src="image/image@2x.png" alt="">
@@ -129,7 +130,7 @@
                 <i class="fa-solid fa-angles-right"></i>
               </div>
               <div class="card_select">
-                <button class="add">Add</button>
+                <button class="add add-to-trip" id="add-button">Add</button>
                 <span class="price">Price $83</span>
               </div>
             </div>
@@ -151,7 +152,7 @@
                 <i class="fa-solid fa-angles-right"></i>
               </div>
               <div class="card_select">
-                <button class="add">Add</button>
+                <button class="add add-to-trip" id="add-button">Add</button>
                 <span class="price">Price $59</span>
               </div>
             </div>
@@ -173,7 +174,7 @@
                 <i class="fa-solid fa-angles-right"></i>
               </div>
               <div class="card_select">
-                <button class="add">Add</button>
+                <button class="add add-to-trip" id="add-button">Add</button>
                 <span class="price">Price $90</span>
               </div>
             </div>
@@ -187,7 +188,6 @@
               <div class="card_review">
                 <i class="fa-solid fa-star"></i>
                 <p>4.0 <span>(120 reviews) Tour</span></p>
-                
               </div>
               <p>Unique 360 panoramic views of the amazing Cambodia skyline, inspired from the best Champagne listings worldwide.</p>
               <div class="read">
@@ -195,7 +195,7 @@
                 <i class="fa-solid fa-angles-right"></i>
               </div>
               <div class="card_select">
-                <button class="add">Add</button>
+                <button class="add add-to-trip" id="add-button">Add</button>
                 <span class="price">Price $80</span>
               </div>
 
@@ -217,19 +217,23 @@
                 <i class="fa-solid fa-angles-right"></i>
               </div>
               <div class="card_select">
-                <button class="add">Add</button>
+                <button class="add add-to-trip" id="add-button">Add</button>
                 <span class="price">Price $79</span>
               </div>
 
             </div>
           </div>
+
+          <div class="select_btn">
+            <button>Explore All</button>
+          </div>
         </div>
-      </div>
-      <div class="select_btn">
-        <button>Explore All</button>
+        
+        <div class="trip-list" id="my-trip-list"></div>
       </div>
       
-
+      <!-- Phần hiển thị các chuyến đi -->
+    
       <div class="footer_container">
         <div class="footer_content">
             <div class="footer_infor">
@@ -291,8 +295,8 @@
       </div>
     </div>
       
-    
-
     <script src="https://kit.fontawesome.com/013b757403.js" crossorigin="anonymous"></script>
+    <script type = "module" src="index.js"></script>
+    <!-- Thêm thuộc tính type="module" để sử dụng các tính năng ES6 -->
   </body>
 </html>
