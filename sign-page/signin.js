@@ -20,7 +20,7 @@ function chk_lname(){
 
 function chk_email(){
     var pattern = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/g;
-    if(pattern.test(document.getElementById('email').value)==false){
+    if((pattern.test(document.getElementById('email').value)==false)){
         alert("Email is not valid");
         // document.getElementById('lname').style.outline = "1px solid red"
         return false;
@@ -43,6 +43,9 @@ function chk_repass(){
     }
 }
 
+var getUser = localStorage.getItem('arrUser');
+var arrUser = JSON.parse(getUser);
+
 function chk_regex(){
     event.preventDefault();
     if(chk_fname()==false||chk_lname()==false||chk_email()==false||chk_pass()==false||chk_repass()==false){
@@ -50,8 +53,11 @@ function chk_regex(){
     }
     var txtTK = document.getElementById('email').value;
     var txtMK = document.getElementById('pass').value;
-    user = {tk: txtTK, pass: txtMK};
-    localStorage.setItem('user', JSON.stringify(user));
+    var txtFname = document.getElementById('fname').value;
+    var txtLname = document.getElementById('lname').value;
+    user = {tk: txtTK, pass: txtMK, fname: txtFname, lname:txtLname};
+    arrUser.push(user);
+    localStorage.setItem('arrUser', JSON.stringify(arrUser));
     
     alert("Đăng ký thành công");
     window.location.href = "signup.html";

@@ -69,25 +69,24 @@
                         <span>Very Good</span>
                         <h5>432 Cares</h5>
                     </div>
-                    <h2>Bangkok by Night Temples Markets
-                        and Food by Tuk-Tuk
+                    <h2 id="name">Bangkok by Night Temples Markets and Food by Tuk-Tuk
                     </h2>
                     <div class="details">
                         <label for="">
                             <span>Tour Code</span>
-                            <a href="#">NNSGN471-007-63535AX-R</a>
+                            <a href="#" id="tcode">NNSGN471-007-63535AX-R</a>
                         </label>
                         <label for="">
                             <span>Depature</span>
-                            <a href="#">22/10/2023</a>
+                            <a href="#" id="depart">22/10/2023</a>
                         </label>
                         <label for="">
                             <span>Duration:</span>
-                            <a href="#">1 days</a>
+                            <a href="#" id="dura">1 days</a>
                         </label>
                         <label for="">
                             <span>Place of departure</span>
-                            <a href="#">Ho Chi Minh City</a>
+                            <a href="#" id="place">Ho Chi Minh City</a>
                         </label>
                         <label for="">
                             <span>Available seat:</span>
@@ -250,23 +249,23 @@
                         <div class="infor_booking">
                             <label for="">
                                 <h4>Passenger</h4>
-                                <span>0 person</span>
+                                <span id="totalPer">0 person</span>
                             </label>
                             <label for="">
                                 <h4>Adult</h4>
                                 <div class="discrea">
-                                    <i class="fa-solid fa-minus"></i>
-                                    <span>0</span>
-                                    <i class="fa-solid fa-plus"></i>
+                                    <i class="fa-solid fa-minus" onclick="minusAdult()"></i>
+                                    <span id="Adult">0</span>
+                                    <i class="fa-solid fa-plus" onclick="addAdult()"></i>
                                 </div>
                             </label>
                             <label for="">
                                 <h4>Children</h4>
                                 <div class="discrea">
                                     <!--Giam-->
-                                    <i class="fa-solid fa-minus"></i>
-                                    <span>0</span>
-                                    <i class="fa-solid fa-plus"></i>
+                                    <i class="fa-solid fa-minus" onclick="minusChild()"></i>
+                                    <span id="Chil">0</span>
+                                    <i class="fa-solid fa-plus" onclick="addChild()"></i>
                                     <!--Tang-->
                                 </div>
                             </label>
@@ -274,9 +273,9 @@
                                 <h4>Baby</h4>
                                 <div class="discrea">
                                     <!--Giam-->
-                                    <i class="fa-solid fa-minus"></i>
-                                    <span>0</span>
-                                    <i class="fa-solid fa-plus"></i>
+                                    <i class="fa-solid fa-minus" onclick="minusBaby()"></i>
+                                    <span id="bby">0</span>
+                                    <i class="fa-solid fa-plus" onclick="addBaby()"></i>
                                     <!--Tang-->
                                 </div>
                             </label>
@@ -290,17 +289,17 @@
                             <label for="" class="discount">
                                 <h4>Discount Code</h4>
                                 <div class="discrea">
-                                    <input type="text" placeholder="Add Code">
-                                    <button>Apply</button>
+                                    <input type="text" placeholder="Add Code" id="sale">
+                                    <button onclick="checkGiamGia()">Apply</button>
                                 </div>
                             </label>
                             <label for="" class="total">
                                 <h4>TOTAL</h4>
                                 <div class="discrea">
-                                    <span>0</span>
+                                    <span id="totalMoney">0</span>
                                 </div>
                             </label>
-                            <button class="book_submit">BOOK NOW</button>
+                            <button class="book_submit" onclick="addTour()">BOOK NOW</button>
                         </div>
                     </div>
                 </div>
@@ -372,4 +371,5 @@
 
     <script src="https://kit.fontawesome.com/013b757403.js" crossorigin="anonymous"></script>
 </body>
+<script src="/details_page/index.js"></script>
 </html>
