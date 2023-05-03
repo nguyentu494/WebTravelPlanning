@@ -108,11 +108,18 @@ body{
 .details{
   display: flex;
   align-items: center;
+  margin-top: 24px;
+  margin-bottom: 24px;
   /* gap: 20px; */
 }
+
 .image_user img{
-  transform: scale(0.6);
-  transform-origin: left;
+  /* transform: scale(0.6);
+  transform-origin: left; */
+  width: 120px;
+  height: 110px;
+  margin-right: 60px;
+  border-radius: 10px;
 }
 .load_infor{
   display: flex;
@@ -183,7 +190,7 @@ label input{
   border: 1px solid #B1B5C3;
   outline: none;
 }
-.infor_acc input[type="submit"]{
+.infor_acc input[type="button"]{
   background-color: #3B71FE;
   outline: none;
   border: none;

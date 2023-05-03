@@ -81,7 +81,7 @@
                 <h3>My profile</h3>
                 <div class="details">
                   <div class="image_user">
-                    <img src="image/mask-group@2x.png" alt="" >
+                    <img src="image/mask-group@2x.png" alt="" id="avt">
                   </div>
                   <div class="load_infor">
                     <form action="" method="post" class="details_load">
@@ -108,11 +108,11 @@
                     <div class="locate">
                       <label for="">
                         <span>Location</span>
-                        <input type="text" placeholder="Alex">
+                        <input type="text" placeholder="Alex" id="txtLocation">
                       </label>
                       <label for="">
                         <span>Date Of Birth</span>
-                        <input type="text" placeholder="Mecheal">
+                        <input type="text" placeholder="Mecheal" id="txtDOB">
                       </label>
                     </div>
     
@@ -122,12 +122,12 @@
                         <input type="text" placeholder="Alex" id="txtemail">
                       </label>
                       <label for="">
-                        <span>Gender</span>
-                        <input type="text" placeholder="Mecheal">
+                        <span>Gender ( M / F )</span>
+                        <input type="text" placeholder="Mecheal" id="txtGender">
                       </label>
                     </div>
     
-                    <input type="submit" value="Save Change">
+                    <input type="button" value="Save Change" onclick="saveInfor()">
                   </form>
                 </div>
               </div>
