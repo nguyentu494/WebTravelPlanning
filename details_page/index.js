@@ -108,3 +108,5 @@ function total(){
 function checkGiamGia(){
     alert("Invalid code");
 }
+
+

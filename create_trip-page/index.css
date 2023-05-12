@@ -6,6 +6,19 @@
 body{
   font-family: 'Inter',sans-serif;
 }
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px; 
+}
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #3B71FE;
+}
 
 .header_nav{
   display : flex;
@@ -114,6 +127,92 @@ body{
  align-items: center;
  padding : 0 20px;
 }
+.user-menu{
+  position: relative;
+}
+.user-menu img{
+  border-left: 1px solid #e0d2d2;
+  display: flex;
+  align-items: center;
+  padding : 0 20px;
+  margin-left: 10px;
+}
+.menu{
+  position: absolute;
+  width: 100px;
+  min-height: 100px;
+  top : calc(100% - 10px);
+  right : 0;
+  display: flex;
+  flex-direction: column;
+  align-items : center;
+  box-shadow: 0 20px 20px #555;     
+  opacity: 0;
+  visibility: hidden;  
+}
+.menu.active{
+  opacity: 1;
+  visibility: visible;
+}
+
+.user-menu ul{
+  position: absolute;
+  display: inline-block;
+  opacity: 1;
+  background-color: #fff;
+  padding: 5px 10px;
+  width: 200px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px #c2c1c1cf;
+  right: -100px;
+  margin: 15px 140px;
+  opacity: 0;
+}
+.user-menu ul li{
+  list-style: none;
+  line-height: 40px;
+}
+.user-menu ul li a{
+  font-size: 0.7em;
+  font-weight: 600;
+  transition: all 0.25s ease-in-out;
+  color: #333;
+}
+.user-menu ul li:nth-child(2){
+  border-bottom: 1px solid #e5dcdcac;
+}
+.user-menu ul li a:hover {
+  /* background-color:rgba(230, 226, 226, 0.372); */
+  padding: 0px 5px;
+  border-radius: 5px;
+}
+.user-menu ul li:nth-child(3){
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+.user-menu ul li:nth-child(4){
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+}
+.user-menu ul li:nth-child(4) .status{
+  background-color: #F4F5F9;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  gap: 10px;
+  padding: 5px 10px;
+  border-radius: 50px;
+  font-size: 0.7em;
+}
+.user-menu ul li:nth-child(4) .status .fa-sun{
+  padding: 5px 10px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+
 
 .things_container{
   display: flex;

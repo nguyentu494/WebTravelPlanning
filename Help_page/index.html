@@ -29,7 +29,22 @@
                     <li><a href="">USD</a></li>
                     <li><a href="/FAQ-page/index.html">FAQ</a></li>
                     <li><a href=""><i class="fa-regular fa-bell"></i></a></li>
-                    <li><a href=""><img src="image/user_header.png" alt=""></a></li>
+                    <li class="user-menu">
+                        <img src="image/user_header.png" alt="" class="user-avatar">
+                        <ul class="menu">
+                            <li><a href="/profile-page/index.html">Accounts</a></li>
+                            <li><a href="/Help_page/index.html">Helps</a></li>
+                            <li>
+                                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                <a href="/sign-page/signup.html">Sign out</a></li>
+                            <li><a href="">Interface</a>
+                            <div class="status">
+                                <i class="fa-regular fa-sun"></i>
+                                <i class="fa-solid fa-moon"></i>
+                            </div>
+                            </li>
+                          </ul>
+                    </li>
                 </ul>
             </div>
           </div>
@@ -40,8 +55,8 @@
                 <p>We're here for you 24/7.</p>
                 <span>Support in approx. 30s</span>
                 <div class="select_help">
-                    <button class="search">Search Bookings</button>
-                    <button class="Sign">Sign In or Register</button>
+                    <a href="/Main_Page/webMain.html" class="search">Search Bookings</a>
+                    <a href="/sign-page/signin.html" target="_blank" class="Sign">Sign In or Register</a>
                 </div>
                 <label for="" class="search_box">
                     <i class="fa-solid fa-magnifying-glass"></i>
@@ -178,7 +193,7 @@
                     </label>
 
                     <div class="select_btn">
-                        <button>Send</button>
+                        <button type="submit" id="send">Send</button>
                     </div>
                 </div>
                 
@@ -249,5 +264,14 @@
     </div>
 
     <script src="https://kit.fontawesome.com/013b757403.js" crossorigin="anonymous"></script>
+    <script src="/js/main.js"></script>
+    <script>
+        const btnsend = document.getElementById('send');
+        btnsend.addEventListener('click' , (e) => {
+            e.preventDefault();
+            alert("You're sign in");
+            window.location.href = "/sign-page/signup.html";
+        })
+    </script>
 </body>
 </html>

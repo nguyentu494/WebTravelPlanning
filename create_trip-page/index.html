@@ -42,7 +42,22 @@
                 <li><a href="">USD</a></li>
                 <li><a href="/FAQ-page/index.html">FAQ</a></li>
                 <li><a href=""><i class="fa-regular fa-bell"></i></a></li>
-                <li><a href=""><img src="image/user_header.png" alt=""></a></li>
+                <li class="user-menu">
+                  <img src="image/user_header.png" alt="" class="user-avatar">
+                  <ul class="menu">
+                      <li><a href="/profile-page/index.html">Accounts</a></li>
+                      <li><a href="/Help_page/index.html">Helps</a></li>
+                      <li>
+                          <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                          <a href="/sign-page/signup.html">Sign out</a></li>
+                      <li><a href="">Interface</a>
+                      <div class="status">
+                          <i class="fa-regular fa-sun"></i>
+                          <i class="fa-solid fa-moon"></i>
+                      </div>
+                      </li>
+                    </ul>
+              </li>
             </ul>
         </div>
       </div>
@@ -225,7 +240,7 @@
           </div>
 
           <div class="select_btn">
-            <button>Explore All</button>
+            <button type="button" id="explore">Explore All</button>
           </div>
         </div>
         
@@ -297,6 +312,7 @@
       
     <script src="https://kit.fontawesome.com/013b757403.js" crossorigin="anonymous"></script>
     <script type = "module" src="index.js"></script>
+    <script src="/js/main.js"></script>
     <!-- Thêm thuộc tính type="module" để sử dụng các tính năng ES6 -->
   </body>
 </html>

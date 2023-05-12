@@ -26,7 +26,10 @@ for(var i = 0; i < arrUser.length; i++){
     
 
 function changePage(){
-    window.location.href = "myTour.html"
+    window.location.href = "/profile-page/myTour.html"
+}
+function changePageSecurity(){
+    window.location.href = "/private-page/index.html"
 }
 
 fileInput.addEventListener("change", (event)=>{

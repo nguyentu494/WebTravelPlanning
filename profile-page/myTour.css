@@ -90,19 +90,19 @@ body{
 }
 
 #tbl-tour{
-  margin-top: 56px;
+  margin-left: 40px;
   width: 1000px;
   background-color: #fafafa;
   border-collapse: collapse;
   border-spacing: 0;
+  border-radius : 5px;
   text-align: center;
-  box-shadow: 0 5px 12px rgba(32,32,32,.3);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
  th, td{
   /* border:1px solid black; */
-  padding: 10px 15px;
-  
+  padding: 20px 15px;
 }
 
 #tbl-tour th{
@@ -114,21 +114,30 @@ body{
 
 td{
   font-family: Arial, Helvetica, sans-serif;
+  border-bottom : 1px solid #dddada;
+}
+tr:hover{
+  background-color: rgba(211, 211, 211, 0.267);
 }
 
 tr:nth-child(odd){
-  background-color: #eeeeee;
+  /* background-color: #eeeeee; */
 }
 
 #btnDel{
   margin-top: 15px;
   border: none;
   border-radius: 5px;
-  padding: 8px 4px;
-  box-shadow: 0 5px 12px rgba(32,32,32,.3);
+  padding: 10px 20px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   display: block;
   float: right;
-  margin-right: 10px;
+  transition: 0.25s ease-in-out;
+  font-size: 1em;
+}
+#btnDel:hover{
+  background-color:rgba(255, 0, 0, 0.715);
+  color: #fff;
 }
 
 .header_nav{

@@ -6,17 +6,26 @@
 body{
   font-family: 'Inter',sans-serif;
 }
-.fag_container{
-  display: flex;
-  flex-direction: column;
+body::-webkit-scrollbar {
+  width: 10px;
 }
+body::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px; 
+}
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #3B71FE;
+}
+
 .header_nav{
   display : flex;
   justify-content: space-around;
   padding: 15px 0;
-  font-size: 1.3em;
+  font-size: 1.2em;
   box-shadow: rgb(38, 57, 77,0.8) 0px 20px 30px -10px;
-  /* position: -webkit-sticky; */
   position: fixed;
   top: 0;
   width: 100%;
@@ -27,6 +36,12 @@ body{
   display : flex;
   align-items: center;
 }
+.nav_logo a{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #333;
+}
 .nav_logo span{
   font-weight: 800;
   font-size: 20px;
@@ -34,12 +49,6 @@ body{
   font-style: normal;
   text-align: center;
   margin-left: 10px;
-}
-.nav_logo a{
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: #333;
 }
 .header_nav .nav_select{
   display: flex;
@@ -59,31 +68,32 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding-top: 10px; */
+  padding: 0px;
   margin: 0 20px;
   color : #333;
   position: relative;
   font-size: 0.9em;
 }
+
 .nav_select ul li a:before{
   content: "";
   position: absolute;
   width: 100%;
-  height: 4px;
+  height: 5px;
   background-color: #333;
   bottom : -3px;
   transform: scale(0);
   transition: transform 0.45s ease-in-out;
   transform-origin: right;
-  top: 44px;
+  top: 41px;
 }
+
 .nav_select ul li a:hover:before{
   transform: scale(1);
   transform-origin: left;
 }
 .header_nav .nav_user{
   display: flex;
-  position: relative;
 }
 .nav_user ul{
   position: relative;
@@ -102,6 +112,7 @@ body{
   font-weight: 700;
   color : gray;
   position: relative;
+  font-size: 1em;
 }
 .nav_user ul li a img{
  border-left: 1px solid #e0d2d2;
@@ -112,6 +123,31 @@ body{
 .user-menu{
   position: relative;
 }
+.user-menu img{
+  border-left: 1px solid #e0d2d2;
+  display: flex;
+  align-items: center;
+  padding : 0 20px;
+  margin-left: 10px;
+}
+.menu{
+  position: absolute;
+  width: 100px;
+  min-height: 100px;
+  top : calc(100% - 10px);
+  right : 0;
+  display: flex;
+  flex-direction: column;
+  align-items : center;
+  box-shadow: 0 20px 20px #555;     
+  opacity: 0;
+  visibility: hidden;  
+}
+.menu.active{
+  opacity: 1;
+  visibility: visible;
+}
+
 .user-menu ul{
   position: absolute;
   display: inline-block;
@@ -167,9 +203,6 @@ body{
   padding: 5px 10px;
   background-color: #fff;
   border-radius: 15px;
-}
-.user-menu:hover ul {
-  opacity: 1;
 }
 
 .footer_container{
@@ -357,4 +390,117 @@ details summary{
   border-radius: 10px;
   padding:14px 21px 14px 21px;
   color: #fff;
+}
+
+.review{
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  margin-top: 15px;
+}
+.review label{
+  background-color: rgba(211, 211, 211, 0.477);
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 0.7em;
+  /* cursor: pointer; */
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%; 
+  border-radius: 10px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.formFAQ{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+.formFAQ input{
+  outline: none;
+  border: 1px solid lightgray;
+  border-radius: 2px;
+  padding: 5px;
+  width: 40%;
+}
+.name , .email ,.security ,.question{
+  margin-bottom: 25px;
+}
+.name input:focus,
+.email input:focus,
+textarea:focus{
+  border: 2px solid #3B71FE;
+}
+.email input{
+  width: 82%;
+}
+.email label{
+  margin-right: 50px
+}
+.name{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.name label{
+  margin-right: 10px;
+}
+.security select{
+  width: 150px;
+  padding: 5px;
+  outline: none;
+}
+.question{
+  display: flex;
+  gap: 30px;
+}
+.question textarea{
+  outline: none;
+  min-width: 460px;
+}
+.btnSubmit{
+  max-width: 100px;
+  border-radius: 5px;
+  margin-left: 95px;
+  transition: 0.25s ease;
+}
+.btnSubmit:hover{
+  background-color: lightgray;
+}
+input[type="submit"]:focus{
+  background-color: #3B71FE;
 }

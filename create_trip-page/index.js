@@ -44,3 +44,8 @@
             thingRight.classList.remove('hide');
          }
     });
+
+    const seeMore = document.getElementById('explore');
+    seeMore.addEventListener('click', () =>{
+        alert('Our website does not currently add new trips !');
+    })

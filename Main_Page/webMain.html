@@ -33,8 +33,9 @@
                         <li><a href="#" title="Currency conversion">USD</a></li>
                         <li><a href="/FAQ-page/index.html">FAQ</a></li>
                         <li><a href="#"><i class="fa-regular fa-bell"></i></a></li>
-                        <li class="user-menu"><a href="#" ><img src="image/user_header.png" alt="" class="user-avatar"></a>
-                            <ul>
+                        <li class="user-menu">
+                            <img src="image/user_header.png" alt="" class="user-avatar">
+                            <ul class="menu">
                                 <li><a href="/profile-page/index.html">Accounts</a></li>
                                 <li><a href="/Help_page/index.html">Helps</a></li>
                                 <li>
@@ -71,7 +72,7 @@
                         <div class="input_details">
                             <label for="" class = "search_plan">
                                 <input type="text" placeholder="Plan a Trip">
-                                <i class="fa-solid fa-arrow-right"></i>
+                                <i id="searchTour" class="fa-solid fa-arrow-right"></i>
                                 <img src="image/eliment_left.png" alt="">
                             </label>
                         </div>
@@ -99,7 +100,7 @@
                 <div class="header_brands">
                     <ul>
                         <li><a href="https://amadeus.com/en" target="_blank"><img src="image/brand01.png" alt="amadeus_brand_img"  title="Click to details"></a></li>
-                        <li><a href="https://www.booking.com/index.vi.html?label=gen173nr-1BCAEoggI46AdIM1gEaPQBiAEBmAEquAEXyAEM2AEB6AEBiAIBqAIDuALj8NmgBsACAdICJDJlYmYyNDVlLTVkZTYtNDcwZi05MDAyLTY3YWQwZjc1ZTAxNNgCBeACAQ&keep_landing=1&sb_price_type=total&"><img src="image/booking_brand02.png" alt="Booking.com_img" title="Click to details"></a></li>
+                        <li><a target="_blank" href="https://www.booking.com/index.vi.html?label=gen173nr-1BCAEoggI46AdIM1gEaPQBiAEBmAEquAEXyAEM2AEB6AEBiAIBqAIDuALj8NmgBsACAdICJDJlYmYyNDVlLTVkZTYtNDcwZi05MDAyLTY3YWQwZjc1ZTAxNNgCBeACAQ&keep_landing=1&sb_price_type=total&"><img src="image/booking_brand02.png" alt="Booking.com_img" title="Click to details"></a></li>
                         <li><a target="_blank" href="https://www.trivago.vn/vi/lm?themeId=280&tc=18&search=200-217&sem_keyword=trivago&sem_creativeid=553381580618&sem_matchtype=e&sem_network=g&sem_device=c&sem_placement=&sem_target=&sem_adposition=&sem_param1=&sem_param2=&sem_campaignid=329911942&sem_adgroupid=120724436555&sem_targetid=kwd-5593367084&sem_location=1028581&cipc=br&cip=8419000005&gclid=Cj0KCQjwwtWgBhDhARIsAEMcxeDScEOU0jbR8jRJiJJgbZxaTxaXi-p629w0Fb2bwXb3asRBHoQ_pwwaAtdKEALw_wcB"><img src="image/trivago_brand03.png" alt="trivago_brand_img" title="Click to details"></a></li>
                         <li><a target="_blank" href="https://www.thetrainline.com/?phcode=1011l231656.&utm_campaign=theballyhoo&utm_medium=affiliate&utm_source=network&cm=0a1e.1011l231656&phcam=1100l229&~campaign_id=1100l229&~click_id=1011lwG5oJ2r"><img src="image/trainline_brand04.png" alt="trainline_brand_img" title="Click to details"></a></li>
                         <li><a target="_blank" href="https://www.vn.cheapflights.com/?lang=en&skipapp=true&gclid=Cj0KCQjwwtWgBhDhARIsAEMcxeAeKEqwiO3S_tTev3ziWv74xSb8ZQ2XRHb8W7tLKNsliwuryycS1hAaAtzsEALw_wcB"><img src="image/cheapflight_brand05.png" alt="cheapflight_brand_img" title="Click to details"></a></li>
@@ -149,7 +150,7 @@
 
         <div class="booking_guide_container">
             <div class="slideshow_container">
-                <div class="booking_cards">
+                <div class="booking_cards active">
                     <div class="card_create_1">
                         <h3>Create Your Trip</h3>
                         <h4>Set up all trip</h4>
@@ -188,11 +189,11 @@
                         </div>
                     </div>
         
-                    <div class="booking_slides">
+                    <!-- <div class="booking_slides">
                         <i class="fa-solid fa-arrow-right"></i>
                         <a href="">01 / <span>03</span></a>
                         <i class="fa-solid fa-arrow-left"></i>
-                    </div>
+                    </div> -->
                 </div>
     
                 <div class="booking_cards">
@@ -234,11 +235,11 @@
                         </div>
                     </div>
         
-                    <div class="booking_slides">
+                    <!-- <div class="booking_slides">
                         <i class="fa-solid fa-arrow-right"></i>
                         <a href="">02 / <span>03</span></a>
                         <i class="fa-solid fa-arrow-left"></i>
-                    </div>
+                    </div> -->
                 </div>
     
                 <div class="booking_cards">
@@ -280,12 +281,17 @@
                         </div>
                     </div>
         
-                    <div class="booking_slides">
+                    <!-- <div class="booking_slides">
                         <i class="fa-solid fa-arrow-right"></i>
                         <a href="">03 / <span>03</span></a>
                         <i class="fa-solid fa-arrow-left"></i>
-                    </div>
+                    </div> -->
                 </div>
+
+                <div class="controls">
+                    <button class="prev"><i class="fa-solid fa-angle-left"></i></button>
+                    <button class="next"><i class="fa-solid fa-angle-right"></i></button>
+                  </div>
             </div>
 
             <div class="booking_steps">
@@ -464,7 +470,7 @@
                     <br>can't get much more advanced than 14 days. 
                 </p>
     
-                <a href="" class="go-plan-btn">Go Plan</a>
+                <a href="/tours-page/index.html" class="go-plan-btn">Go Plan</a>
             </div>
             
             <div class="steps-book">
@@ -603,5 +609,6 @@
     </div>
 
     <script src="https://kit.fontawesome.com/013b757403.js" crossorigin="anonymous"></script>
+    <script src="/js/main.js"></script>
 </body>
 </html>

@@ -41,10 +41,25 @@
         </div>
         <div class="nav_user">
             <ul>
-                <li><a href="">USD</a></li>
-                <li><a href="FAQ-page/index.html">FAQ</a></li>
+                <li><a href="#">USD</a></li>
+                <li><a href="/FAQ-page/index.html">FAQ</a></li>
                 <li><a href=""><i class="fa-regular fa-bell"></i></a></li>
-                <li><a href="" ><img src="image/user_header.png" alt=""></a></li>
+                <li class="user-menu">
+                  <img src="image/user_header.png" alt="" class="user-avatar">
+                  <ul class="menu">
+                      <li><a href="/profile-page/index.html">Accounts</a></li>
+                      <li><a href="/Help_page/index.html">Helps</a></li>
+                      <li>
+                          <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                          <a href="/sign-page/signup.html">Sign out</a></li>
+                      <li><a href="">Interface</a>
+                      <div class="status">
+                          <i class="fa-regular fa-sun"></i>
+                          <i class="fa-solid fa-moon"></i>
+                      </div>
+                      </li>
+                    </ul>
+              </li>
             </ul> 
         </div>
       </div>
@@ -60,11 +75,7 @@
                 <i class="fa-regular fa-user"></i>
                 <span>Account Setting</span>
               </label>
-              <label for="" class="choice_not">
-                <i class="fa-regular fa-bell"></i>
-                <span>Notification</span>
-              </label>
-              <label for="" class="choice_pri">
+              <label for="" class="choice_pri" onclick="changePageSecurity()">
                 <i class="fa-solid fa-lock"></i>
                 <span>Privacy & Security</span>
               </label>
@@ -112,7 +123,7 @@
                       </label>
                       <label for="">
                         <span>Date Of Birth</span>
-                        <input type="text" placeholder="Mecheal" id="txtDOB">
+                        <input type="date" placeholder="12/12/2012" id="txtDOB">
                       </label>
                     </div>
     
@@ -123,7 +134,7 @@
                       </label>
                       <label for="">
                         <span>Gender ( M / F )</span>
-                        <input type="text" placeholder="Mecheal" id="txtGender">
+                        <input type="text" placeholder="Male" id="txtGender">
                       </label>
                     </div>
     
@@ -131,25 +142,8 @@
                   </form>
                 </div>
               </div>
-              <div class="pass">
-                <h3>Password</h3>
-                <form action="">
-                  <label for="">
-                    <span>Current password</span>
-                    <input type="email" value="ulto@22">
-                  </label>
-                  <label for="">
-                    <span>New password</span>
-                    <input type="password" value="ulto@22">
-                  </label>
-                  <label for="">
-                    <span>Confirm password</span>
-                    <input type="password" value="ulto@22">
-                  </label>
-                </form>
-              </div>
               <div class="social">
-                <div class="social_title">
+                <div class="social_title" id="socials_link">
                   <h3>Social Networks</h3>
                   <p>Connect your facebook, twitter and linkedin account to log in quickly.</p>
                 </div>
@@ -160,7 +154,7 @@
                       <i class="fa-brands fa-square-facebook"></i>
                       <p>You are successfully connected to facebook. you can easily log in using your facebook account.</p>
                     </div>
-                    <button>Remove</button>
+                    <button>Connect</button>
                   </label>
                 </div>
                 <div class="twitter">
@@ -170,7 +164,7 @@
                       <i class="fa-brands fa-square-twitter"></i>
                       <p>You are successfully connected to twitter. you can easily log in using your twitter account.</p>
                     </div>
-                    <button>Remove</button>
+                    <button>Connect</button>
                   </label>
                 </div>
                 <div class="linkedin">
@@ -180,7 +174,7 @@
                       <i class="fa-brands fa-linkedin"></i>
                       <p>You are successfully connected to Linkedin. you can easily log in using your account.</p>
                     </div>
-                    <button>Remove</button>
+                    <button>Connect</button>
                   </label>
                 </div>
               </div>
@@ -251,11 +245,9 @@
       </div>
     </div>
     
-   
-
-
     <script src="https://kit.fontawesome.com/013b757403.js" crossorigin="anonymous"></script>
   </body>
   <script src="/profile-page/index.js"></script>
+  <script src="/js/main.js"></script>
 
 </html>

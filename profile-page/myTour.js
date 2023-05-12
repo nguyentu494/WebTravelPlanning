@@ -46,15 +46,18 @@ var user1 = JSON.parse(getUser1);
         }
     }
 
-    
-
 function clearTour(){
-    arrTour = []
-    localStorage.setItem('arrTour', JSON.stringify(arrTour))
-    alert("Deleted")
-    location.reload()
+    if(confirm('Are you sure delete all tours ?')){
+        arrTour = []
+        localStorage.setItem('arrTour', JSON.stringify(arrTour))
+        alert("Deleted")
+        location.reload()
+    }
 }
 
 function changePage(){
     window.location.href = "index.html"
+}
+function changePageSecurity(){
+    window.location.href = "/private-page/index.html"
 }
