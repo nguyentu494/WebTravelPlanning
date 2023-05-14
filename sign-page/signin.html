@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="signin.css">
     <title>Sign In - Airtrav</title>
     <link rel="shortcut icon" href="image/logo.png" type="image/png">
+    <script src="/sign-page/jquery-3.3.1.min.js"></script>
 </head>
 <body>
   <div class="image_main">
@@ -37,23 +38,23 @@
     
             <form action="" class="infor">
                 <label for="" class="details">
-                    <span>First Name</span>
+                    <span>First Name   <span class="error" id="errfname" style="color: red;">(*)</span></span>
                     <input type="text" placeholder="Enter your first name" id="fname">
                 </label>
                 <label for=""class="details">
-                    <span>Last Name</span>
+                    <span>Last Name    <span class="error" id="errlname" style="color: red;">(*)</span></span>
                     <input type="text" placeholder="Enter your last name" id="lname">
                 </label>
                 <label for=""class="details">
-                    <span>Email</span>
+                    <span>Email        <span class="error" id="erremail" style="color: red;">(*)</span></span>
                     <input type="email" placeholder="Email Address" id="email">
                 </label>
                 <label for=""class="details">
-                    <span>Password</span>
+                    <span>Password     <span class="error" id="errpass" style="color: red;">(*)</span></span>
                     <input type="password" placeholder="Password" id="pass">
                 </label>
                 <label for=""class="details">
-                    <span>Confirm Password</span>
+                    <span>Confirm Password     <span class="error" id="errrepass" style="color: red;">(*)</span></span>
                     <input type="password" placeholder="Password" id="repass">
                 </label>
                 <div class="remember_me">
@@ -63,7 +64,7 @@
                     </label>
                     <a href="">Forgot your password?</a>
                 </div>
-                <button href onclick="chk_regex()">Sign in</button>
+                <button onclick="chk_regex()">Sign in</button>
             </form>
         </div>
         

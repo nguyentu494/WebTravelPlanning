@@ -8,6 +8,7 @@
     <title>Details Booking Ayatthaya, ThaiLand - Airtrav</title>
     <link rel="shortcut icon" href="image/logo.png" type="image/png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/details_page/modal.css">
 </head>
 <body>
     <div class="detail_container">
@@ -282,7 +283,8 @@
                             <label for="">
                                 <h4>Private room surcharge</h4>
                                 <div class="discrea_check">
-                                    <input type="radio">
+                                    <input type="radio" id="private">
+
                                     <span>$1600</span>
                                 </div>
                             </label>
@@ -299,12 +301,128 @@
                                     <span id="totalMoney">0</span>
                                 </div>
                             </label>
-                            <button class="book_submit" onclick="addTour()">BOOK NOW</button>
+                            <button class="book_submit" id="loadPayMent">BOOK NOW</button>
                         </div>
                     </div>
                 </div>
             </div>
-          </div>
+        </div>
+          
+        <div id="modal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="nav_logo" title="Back to home" >
+                <a href="#">
+                  <img src="image/logo.png" alt="">
+                  <span>Airtrav</span>
+                </a>  
+              </div>
+              <div><h2 style="font-size: 2em;" class="payment">Payment</h2></div>
+
+              <form id="myForm" class="formFAQ">
+                <div class="infor">
+                    <div class="infor-cus">
+                        <div class="contact">
+                            <h3>Contact</h3>
+                        </div>
+                        <div class="name">
+                            <label for="fullname">Full Name:</label>
+                            <input type="text" id="firstname" name="firstname" required>
+                            <input type="text" id="lastname" name="lastname" required>
+                        </div>
+                        <div class="email">
+                            <label for="email">Email:</label>
+                            <input id="email" name="email" required>
+                        </div>
+                        <div class="phone">
+                            <label for="phone">Phone:</label>
+                            <input id="phone" name="phone" required>
+                        </div>
+                        <div class="paymentMe">
+                            <h3>Payment method</h3>
+                        </div>
+                        <div class="methods">
+                            <a class="method" onclick="qrMomo()"><img src="/details_page/imageMo/logo-momo.png" alt=""></a>
+                            <a class="method" onclick="qrMomo()"><img src="/details_page/imageMo/th.jpg" alt=""></a>
+                            <a class="mastercard" onclick="mastercard()"><img src="/details_page/imageMo/Mastercard_Logo_1990-2048x1223.png" alt=""></a>
+                        </div>
+                        <div class="detail-method">
+                            <a id="momo-me" class="momo-method" target="_blank" href="/details_page/imageMo/My_Gallery.png"><img src="/details_page/imageMo/My_Gallery.png" alt=""></a>
+                            <div class="visa-method" id="visa-me">
+                                <div class="cr">
+                                    <label for="cr">Credit Card Number: </label>
+                                    <input type="cr" id="cr" name="cr" required>
+                                </div>
+                                <div class="cr-name">
+                                    <label for="cr-name">Credit Card Name: </label>
+                                    <input id="cr-name" name="cr-name" required>
+                                </div>
+                                <div class="cvv">
+                                    <label for="cvv">CVV: </label>
+                                    <input id="cvv" name="cvv" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infor-tour">
+                        <div class="book_now1">
+                            <h2>Trip summary</h2>
+                            <div class="infor_book">
+                                <img src="image/book.jpg" alt="">
+                                <p>Bangkok by Night Temples Markets
+                                    and Food by Tuk-Tuk</p>
+                            </div>
+                            <div class="infor_booking">
+                                <label for="">
+                                    <h4>Passenger</h4>
+                                    <span id="totalPer1">0 person</span>
+                                </label>
+                                <label for="">
+                                    <h4>Adult</h4>
+                                    <div class="discrea">
+                                        <span id="Adult1">0</span>
+                                    </div>
+                                </label>
+                                <label for="">
+                                    <h4>Children</h4>
+                                    <div class="discrea">
+                                        <!--Giam-->
+                                        <span id="Chil1">0</span>
+                                        <!--Tang-->
+                                    </div>
+                                </label>
+                                <label for="">
+                                    <h4>Baby</h4>
+                                    <div class="discrea">
+                                        <!--Giam-->
+                                        <span id="bby1">0</span>
+                                        <!--Tang-->
+                                    </div>
+                                </label>
+                                <label for="">
+                                    <h4>Private room surcharge</h4>
+                                    <div class="discrea_check">
+                                        <input type="radio" id="private1">
+                                        <span>$1600</span>
+                                    </div>
+                                </label>
+                                
+                                <label for="" class="total">
+                                    <h4>TOTAL</h4>
+                                    <div class="discrea_total">
+                                        <span id="totalMoney1">0</span>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer">
+                    <a class="btnApply" onclick="addTour()">CONFIRM</a>
+                </div>
+              </form>
+            </div>
+        </div>
 
           <div class="footer_container">
             <div class="footer_content">

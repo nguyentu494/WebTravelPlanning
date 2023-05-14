@@ -229,3 +229,9 @@ body::-webkit-scrollbar-thumb:hover {
     z-index: 99;
   }
   
+.error{
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 100;
+    
+}
