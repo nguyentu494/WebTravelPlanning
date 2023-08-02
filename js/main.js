@@ -42,3 +42,5 @@ next.addEventListener('click', function() {
   }
   slides[index].classList.add('active');
 });
+
+AOS.init();

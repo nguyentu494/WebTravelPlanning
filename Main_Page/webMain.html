@@ -4,12 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- a part style main and second css -->
     <link rel="stylesheet" href="styleMain.css">
-    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@200&family=Gloock&family=Inter:wght@200;300;400;500;600;700;800&family=Lobster&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,600;1,800;1,900&family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="slide4.css">
     <link rel="stylesheet" href="slide3.css">
     <link rel="stylesheet" href="slide2.css">
+    <!-- -------------------------------------- -->
     
+    <!-- library scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- title and shortcut -->
     <title>Travel_planning - Airtrav</title>
     <link rel="shortcut icon" href="image/logo.png" type="image/png">
 </head>
@@ -32,7 +39,8 @@
                     <ul>
                         <li><a href="#" title="Currency conversion">USD</a></li>
                         <li><a href="/FAQ-page/index.html">FAQ</a></li>
-                        <li><a href="#"><i class="fa-regular fa-bell"></i></a></li>
+                        <li><a href="#"><i class="fa-regular fa-bell" title="Notification
+                            "></i></a></li>
                         <li class="user-menu">
                             <img src="image/user_header.png" alt="" class="user-avatar">
                             <ul class="menu">
@@ -63,7 +71,7 @@
                           </div>
                     </div>
                     <div class="header_infor_details">
-                        <div class="intro_details">
+                        <div class="intro_details"   data-aos="zoom-in-up">
                             <h2>Travel Planning Made</h2>
                             <span>Easy</sp>
                             <img src="image/wave.png" alt="" class="wave">
@@ -99,12 +107,12 @@
                 </div>
                 <div class="header_brands">
                     <ul>
-                        <li><a href="https://amadeus.com/en" target="_blank"><img src="image/brand01.png" alt="amadeus_brand_img"  title="Click to details"></a></li>
-                        <li><a target="_blank" href="https://www.booking.com/index.vi.html?label=gen173nr-1BCAEoggI46AdIM1gEaPQBiAEBmAEquAEXyAEM2AEB6AEBiAIBqAIDuALj8NmgBsACAdICJDJlYmYyNDVlLTVkZTYtNDcwZi05MDAyLTY3YWQwZjc1ZTAxNNgCBeACAQ&keep_landing=1&sb_price_type=total&"><img src="image/booking_brand02.png" alt="Booking.com_img" title="Click to details"></a></li>
-                        <li><a target="_blank" href="https://www.trivago.vn/vi/lm?themeId=280&tc=18&search=200-217&sem_keyword=trivago&sem_creativeid=553381580618&sem_matchtype=e&sem_network=g&sem_device=c&sem_placement=&sem_target=&sem_adposition=&sem_param1=&sem_param2=&sem_campaignid=329911942&sem_adgroupid=120724436555&sem_targetid=kwd-5593367084&sem_location=1028581&cipc=br&cip=8419000005&gclid=Cj0KCQjwwtWgBhDhARIsAEMcxeDScEOU0jbR8jRJiJJgbZxaTxaXi-p629w0Fb2bwXb3asRBHoQ_pwwaAtdKEALw_wcB"><img src="image/trivago_brand03.png" alt="trivago_brand_img" title="Click to details"></a></li>
-                        <li><a target="_blank" href="https://www.thetrainline.com/?phcode=1011l231656.&utm_campaign=theballyhoo&utm_medium=affiliate&utm_source=network&cm=0a1e.1011l231656&phcam=1100l229&~campaign_id=1100l229&~click_id=1011lwG5oJ2r"><img src="image/trainline_brand04.png" alt="trainline_brand_img" title="Click to details"></a></li>
-                        <li><a target="_blank" href="https://www.vn.cheapflights.com/?lang=en&skipapp=true&gclid=Cj0KCQjwwtWgBhDhARIsAEMcxeAeKEqwiO3S_tTev3ziWv74xSb8ZQ2XRHb8W7tLKNsliwuryycS1hAaAtzsEALw_wcB"><img src="image/cheapflight_brand05.png" alt="cheapflight_brand_img" title="Click to details"></a></li>
-                        <li><a target="_blank" href="https://www.momondo.com/"><img src="image/momondo_brand06.png" alt="momodo_brand_img" title="Click to details"></a></li>
+                        <li><a href="https://amadeus.com/en" target="_blank" rel="noopener"><img src="image/brand01.png" alt="amadeus_brand_img"  title="Click to details"></a></li>
+                        <li><a target="_blank" rel="noopener" href="https://www.booking.com/index.vi.html?label=gen173nr-1BCAEoggI46AdIM1gEaPQBiAEBmAEquAEXyAEM2AEB6AEBiAIBqAIDuALj8NmgBsACAdICJDJlYmYyNDVlLTVkZTYtNDcwZi05MDAyLTY3YWQwZjc1ZTAxNNgCBeACAQ&keep_landing=1&sb_price_type=total&"><img src="image/booking_brand02.png" alt="Booking.com_img" title="Click to details"></a></li>
+                        <li><a target="_blank" rel="noopener" href="https://www.trivago.vn/vi/lm?themeId=280&tc=18&search=200-217&sem_keyword=trivago&sem_creativeid=553381580618&sem_matchtype=e&sem_network=g&sem_device=c&sem_placement=&sem_target=&sem_adposition=&sem_param1=&sem_param2=&sem_campaignid=329911942&sem_adgroupid=120724436555&sem_targetid=kwd-5593367084&sem_location=1028581&cipc=br&cip=8419000005&gclid=Cj0KCQjwwtWgBhDhARIsAEMcxeDScEOU0jbR8jRJiJJgbZxaTxaXi-p629w0Fb2bwXb3asRBHoQ_pwwaAtdKEALw_wcB"><img src="image/trivago_brand03.png" alt="trivago_brand_img" title="Click to details"></a></li>
+                        <li><a target="_blank" rel="noopener" href="https://www.thetrainline.com/?phcode=1011l231656.&utm_campaign=theballyhoo&utm_medium=affiliate&utm_source=network&cm=0a1e.1011l231656&phcam=1100l229&~campaign_id=1100l229&~click_id=1011lwG5oJ2r"><img src="image/trainline_brand04.png" alt="trainline_brand_img" title="Click to details"></a></li>
+                        <li><a target="_blank" rel="noopener" href="https://www.vn.cheapflights.com/?lang=en&skipapp=true&gclid=Cj0KCQjwwtWgBhDhARIsAEMcxeAeKEqwiO3S_tTev3ziWv74xSb8ZQ2XRHb8W7tLKNsliwuryycS1hAaAtzsEALw_wcB"><img src="image/cheapflight_brand05.png" alt="cheapflight_brand_img" title="Click to details"></a></li>
+                        <li><a target="_blank" rel="noopener" href="https://www.momondo.com/"><img src="image/momondo_brand06.png" alt="momodo_brand_img" title="Click to details"></a></li>
                     </ul>
                 </div>
             </div>
@@ -112,12 +120,12 @@
 
         <div class="adver">
             <div class="adver-container">
-                <h1 class="adver-header">Innovative Trip Planning</h1>
-                <p class="adver-sub-header">Our Vision is to revolutionize the way people travel by <br>introducing intelligent trip planning</p>
+                <h1 class="adver-header"  data-aos="fade-down">Innovative Trip Planning</h1>
+                <p class="adver-sub-header"  data-aos="fade-down" data-aos-duration="5000">Our Vision is to revolutionize the way people travel by <br>introducing intelligent trip planning</p>
             </div>
             <div class="adver-items">
-                <a href="" class="btn-item item1">
-                    <div class="adver-item ">
+                <a href="#" class="btn-item item1"  data-aos="zoom-in" >
+                    <div class="adver-item" >
                         <img src="image/label01.png" alt="">
                         <p class="">Partner allows you to 
                         <br>browse multiple carriers 
@@ -126,7 +134,7 @@
                     </div>
                 </a>
 
-                <a href="" class="btn-item item2">
+                <a href="#" class="btn-item item2" data-aos="zoom-in">
                     <div class="adver-item ">
                         <img src="image/label02.png" alt="">
                         <p class="">The website is a way for 
@@ -136,7 +144,7 @@
                     </div>
                 </a>
 
-                <a href="" class="btn-item item3">
+                <a href="#" class="btn-item item3" data-aos="zoom-in">
                     <div class="adver-item ">
                         <img src="image/label03.png" alt="">
                         <p class="">The eBook Reader is 
@@ -149,7 +157,7 @@
         </div>
 
         <div class="booking_guide_container">
-            <div class="slideshow_container">
+            <div class="slideshow_container" data-aos="fade-up-right">
                 <div class="booking_cards active">
                     <div class="card_create_1">
                         <h3>Create Your Trip</h3>
@@ -289,12 +297,12 @@
                 </div>
 
                 <div class="controls">
-                    <button class="prev"><i class="fa-solid fa-angle-left"></i></button>
-                    <button class="next"><i class="fa-solid fa-angle-right"></i></button>
+                    <button type="button" class="prev"><i class="fa-solid fa-angle-left"></i></button>
+                    <button type="button" class="next"><i class="fa-solid fa-angle-right"></i></button>
                   </div>
             </div>
 
-            <div class="booking_steps">
+            <div class="booking_steps" data-aos="fade-left">
                 <h2>Book Easy 3 Steps</h2>
                 <p>Planning a trip is sometimes not easy. But Trip Plan will help you to manage time and budget for your journey! There are only 3 steps: Create an account, choose your destination city.</p>
                 <div class="details_steps">
@@ -334,7 +342,7 @@
 
         <div class="book-trip">
             <div class="review-book-trip">
-                <div class="header-book-trip">
+                <div class="header-book-trip"  data-aos="fade-right">
                     <h1>Easy Trip Booking Website</h1>
                     <p>A new way to book travel online, saving you time. With trip, There are 
                     <br>no confusing spreadsheets or complicated searches. We just ask the 
@@ -342,9 +350,9 @@
                 </div>
 
                 <div class="items-book-trip">
-                    <div class="btn-item">
+                    <div class="btn-item" data-aos="zoom-in-up">
                         <div class="item-book-trip">
-                            <a target="_blank" href="https://www.tripadvisor.com.vn/">
+                            <a target="_blank" href="https://www.tripadvisor.com.vn/" rel="noopener">
                                 <img src="image/brand logo_01.png" alt="" title ="Click to details">
                                 <h4>Trip Advisor</h4>
                             </a>
@@ -352,9 +360,9 @@
                         </div>
                     </div>    
 
-                    <div class="btn-item">
+                    <div class="btn-item" data-aos="zoom-in-up">
                         <div class="item-book-trip">
-                            <a target="_blank" href="https://www.airbnb.com.vn/">
+                            <a target="_blank" href="https://www.airbnb.com.vn/" rel="noopener">
                                 <img src="image/brand logo_02.png" alt="" title ="Click to details">
                                 <h4>Arbn</h4>
                             </a>
@@ -362,9 +370,9 @@
                         </div>
                     </div> 
 
-                    <div class="btn-item">
+                    <div class="btn-item" data-aos="zoom-in-up">
                         <div class="item-book-trip">
-                            <a target="_blank" href="https://www.turkishcargo.com.tr/en">
+                            <a target="_blank" href="https://www.turkishcargo.com.tr/en" rel="noopener">
                                 <img src="image/brand logo_03.png" alt="" title ="Click to details">
                                 <h4>Turkish Cargo</h4>
                             </a>
@@ -372,9 +380,9 @@
                         </div>
                     </div>
                     
-                    <div class="btn-item">
+                    <div class="btn-item" data-aos="zoom-in-up">
                         <div class="item-book-trip">
-                            <a target="_blank" href="https://www.iata.org/">
+                            <a target="_blank" href="https://www.iata.org/" rel="noopener">
                                 <img src="image/brand logo_04.png" alt="" title ="Click to details">
                                 <h4>Itata</h4>
                             </a>
@@ -385,7 +393,7 @@
                 </div>
             </div>
             
-            <div class="select-book-trip">
+            <div class="select-book-trip" data-aos="fade-down-left">
                 <div class="title-book-trip">
                     <img src="image/example.png" alt="">
                     <div class="sub-title">
@@ -428,28 +436,28 @@
         <div class="discorver_container">
             <h2>Discover our Features</h2>
             <div class="discover_content">
-                <div class="details_discover">
+                <div class="details_discover" data-aos="fade-right">
                     <div class="share">
                         <img src="image/Features_01.png" alt="">
                         <span>Share Your Travel Plan</span>
                     </div>
                     <p>Ticket is an ultra-convenient way to buy your train or bus ticket online in seconds.</p>
                 </div>
-                <div class="details_discover">
+                <div class="details_discover" data-aos="fade-left">
                     <div class="get">
                         <img src="image/Features_02.png" alt="">
                         <span>Get Monthly Tour</span>
                     </div>
                     <p>Our Get Monthly Tours marketing package will help get more clients in your photography business.</p>
                 </div>
-                <div class="details_discover">
+                <div class="details_discover" data-aos="fade-right">
                     <div class="receive">
                         <img src="image/Features_03.png" alt="">
                         <span>Receive Ticket</span>
                     </div>
                     <p>The Receive plan Ticket will allow you to travel freely. You will be able to get in any location.</p>
                 </div>
-                <div class="details_discover">
+                <div class="details_discover" data-aos="fade-left">
                     <div class="flight">
                         <img src="image/Features_04.png" alt="">
                         <span>Flight Booking</span>
@@ -461,7 +469,7 @@
 
         <div class="help-book-trip">
             <div class="trip-plan">
-                <h1 class="ready-trip">
+                <h1 class="ready-trip"  data-aos="fade-down-right">
                     Ready for 14 days <br> Trip plan
                 </h1>
     
@@ -475,7 +483,8 @@
             
             <div class="steps-book">
                 <img src="image/illustration.png" alt="" class="people">
-                <div class="to-step-book">
+                <div class="to-step-book"  data-aos="fade-up"
+                data-aos-duration="1000">
                     <div class="a-step step1">
                         <div class="step-book">
                             <img src="image/share.png" alt="">
@@ -609,6 +618,7 @@
     </div>
 
     <script src="https://kit.fontawesome.com/013b757403.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="/js/main.js"></script>
 </body>
 </html>

@@ -29,14 +29,7 @@
     line-height: 24px;
 }
 
-.btn-item{
-    position: relative;
-    transition: all 0.25s ease-in-out;
-}
-.btn-item:hover{
-    transform: scale(1.1);
-    margin:0 5px;
-}
+
 
 .items-book-trip{
     display: flex;
