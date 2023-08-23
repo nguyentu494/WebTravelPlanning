@@ -10,21 +10,20 @@
         const cardClone = card.cloneNode(true);
         cardClone.classList.add('card_clone');
         myTripList.appendChild(cardClone);
-        myTripList.classList.add('.active');
+        myTripList.classList.add('active');
 
  // Thay đổi màu và chữ của button khi được nhấn
     const addButton = card.querySelector('.add');
     if (addButton) {
         addButton.innerHTML = isAdded ? 'Add' : 'Added';
         addButton.style.backgroundColor = isAdded ? 'gray' : 'blue';
-        }
+    }
     alert("Add to Show items for your trip successed !")
     }
-    
         
 // Lặp qua tất cả các button add-to-trip và thêm sự kiện click
     addToTripButtons.forEach(button => {
-            button.addEventListener('click', handleAddToTripButtonClick);
+        button.addEventListener('click', handleAddToTripButtonClick);
     });
 
  // Thêm sự kiện "change" vào checkbox "show items in my trip"

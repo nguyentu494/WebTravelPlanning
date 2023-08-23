@@ -390,6 +390,7 @@ details summary{
   border-radius: 10px;
   padding:14px 21px 14px 21px;
   color: #fff;
+  cursor: pointer;
 }
 
 .review{
@@ -403,10 +404,10 @@ details summary{
   padding: 5px 10px;
   border-radius: 3px;
   font-size: 0.7em;
-  /* cursor: pointer; */
   display: flex;
   align-items: center;
   gap: 5px;
+  cursor: pointer;
 }
 
 .modal {
@@ -420,6 +421,7 @@ details summary{
   overflow: auto; 
   background-color: rgb(0,0,0); 
   background-color: rgba(0,0,0,0.4); 
+  transition: 0.5s ease-in;
 }
 
 .modal-content {
@@ -493,10 +495,12 @@ textarea:focus{
   min-width: 460px;
 }
 .btnSubmit{
-  max-width: 100px;
+  /* max-width: 100px; */
   border-radius: 5px;
   margin-left: 95px;
   transition: 0.25s ease;
+  padding: 20px 15px;
+  font-weight: bold;
 }
 .btnSubmit:hover{
   background-color: lightgray;

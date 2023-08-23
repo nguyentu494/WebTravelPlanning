@@ -12,13 +12,13 @@ function chk_user(){
         alert("Please fill in the information !");
     }else if(txtMail=='admin@gmail.com'&&txtPass=='12345678'){
         alert("Login success");
-        window.location.href = "http://127.0.0.1:5500/Admin_page/index.html";
+        window.location.href = "../Admin_page/index.html";
     }
     else{
         for(var i = 0; i < arrUser.length; i++){
             if(arrUser[i].tk == txtMail && arrUser[i].pass == txtPass){
                 alert("Login success");
-                window.location.href = "http://127.0.0.1:5500/Main_Page/webMain.html";
+                window.location.href = "/WebTravelPlanning/Main_Page/webMain.html";
                 return;
             }
         }
@@ -26,3 +26,10 @@ function chk_user(){
     }
     
 }
+
+const choiceSocials = document.getElementById('choiceSocials');
+const opionSocials = document.querySelector('.sign-up-choice');
+choiceSocials.addEventListener('click', function(e){
+    e.preventDefault();
+    opionSocials.classList.toggle('open');
+})

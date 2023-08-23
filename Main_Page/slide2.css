@@ -17,9 +17,6 @@
     text-align: center;
    line-height: 30px;
 }
-.adver-sub-header p{
-
-}
 .adver-items{
     margin-top: 70px;
     width: 100%;
@@ -27,7 +24,6 @@
     justify-content: center; 
     gap : 30px;  
 }
-
 .btn-item{
     min-width: 20%;
     text-align: center;
@@ -39,10 +35,6 @@
     position: relative;
     transition: all 0.25s ease-in-out;
 }
-.btn-item:hover{
-    /* transform: scale(2); */
-    /* margin:0 5px; */
-}
 .item1:hover{
     background-color: rgb(194, 229, 194);
 }
@@ -52,7 +44,6 @@
 .item3:hover{
     background-color: rgba(113, 145, 240, 0.2);
 }
-
 .item1{
     border-radius: 10px;
     background-color: rgba(59, 210, 59,0.2);
@@ -68,7 +59,6 @@
     background-color: rgba(64, 106, 232, 0.2);
     transition: 0.25s ease;
 }
-
 .adver-item p{
     margin-top: 18px;
     font-weight: 400;

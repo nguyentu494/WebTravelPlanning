@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/013b757403.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="signin.css">
+
     <title>Sign In - Airtrav</title>
     <link rel="shortcut icon" href="image/logo.png" type="image/png">
     <script src="/sign-page/jquery-3.3.1.min.js"></script>
@@ -17,14 +18,14 @@
     <div class="card_sign_in">
         <div class="card_left">
             <div class="logo_header">
-                <a href="/Main_Page/webMain.html" title="Back Home">
+                <a href="../Main_Page/webMain.html" title="Back Home">
                     <img src="image/logo.png" alt="">
                     <span>Airtrav</span>
                 </a>  
             </div>
             <h2>Get Started</h2>
             <div class="forget">
-                <p>Don't have an account ? <a href="signup.html">Sign in</a></p>
+                <p>Don't have an account ? <a href="./signup.html">Sign in</a></p>
             </div>
             <div class="select_socials">
                 <div class="socials">
@@ -57,14 +58,14 @@
                     <span>Confirm Password     <span class="error" id="errrepass" style="color: red;">(*)</span></span>
                     <input type="password" placeholder="Password" id="repass">
                 </label>
-                <div class="remember_me">
+                <!-- <div class="remember_me">
                     <label for="" class="chk_remember" id="check_remem">
                         <input type="checkbox" id="check_remem">
                         <span>Remember me</span>
                     </label>
                     <a href="">Forgot your password?</a>
-                </div>
-                <button onclick="chk_regex()">Sign in</button>
+                </div> -->
+                <button type="submit" onclick="chk_regex()">Sign in</button>
             </form>
         </div>
         
@@ -72,8 +73,6 @@
             <img src="image/image_signin.jpg" alt="">
         </div>
     </div>
-  
-
 </body>
-<script src="/sign-page/signin.js"></script>
+<script src="../sign-page/signin.js"></script>
 </html>

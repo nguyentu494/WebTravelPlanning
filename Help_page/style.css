@@ -552,9 +552,6 @@ body::-webkit-scrollbar-thumb:hover {
   .help_left h2{
     font-size: 2em;
   }
-  .help_left span{
-    /* padding-bottom: 20px; */
-  }
   .help_left label{
     border: 1px solid #fff;
     padding: 15px 13px;

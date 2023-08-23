@@ -5,14 +5,11 @@ profile.onclick = function(){
     menu.classList.toggle('active');
 }
 
-
 const searchTour = document.getElementById('searchTour');
 
 searchTour.addEventListener('click' , (e) => {
     window.location.href = "/create_trip-page/index.html"
 })
-
-
 
 const slides = document.querySelectorAll('.booking_cards');
 const prev = document.querySelector('.prev');
@@ -43,4 +40,4 @@ next.addEventListener('click', function() {
   slides[index].classList.add('active');
 });
 
-AOS.init();
+// AOS.init();

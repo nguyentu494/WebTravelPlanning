@@ -24,12 +24,12 @@ for(var i = 0; i < arrUser.length; i++){
     }
 }
     
+function changePageSecurity(){
+    window.location.href = "../private-page/index.html"
+}
 
 function changePage(){
-    window.location.href = "/profile-page/myTour.html"
-}
-function changePageSecurity(){
-    window.location.href = "/private-page/index.html"
+    window.location.href = "./myTour.html"
 }
 
 fileInput.addEventListener("change", (event)=>{

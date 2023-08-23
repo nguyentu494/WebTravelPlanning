@@ -56,8 +56,8 @@ function clearTour(){
 }
 
 function changePage(){
-    window.location.href = "index.html"
+    window.location.href = "./index.html"
 }
 function changePageSecurity(){
-    window.location.href = "/private-page/index.html"
+    window.location.href = "../private-page/index.html"
 }

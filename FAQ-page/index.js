@@ -1,31 +1,35 @@
-// Xử lý sự kiện hàm like , dislike 
 function handleLikeDislikeClick(event) {
-    const likeDislikeContainer = event.currentTarget;
-    const likeButton = likeDislikeContainer.querySelector('.fa-thumbs-up');
-    const dislikeButton = likeDislikeContainer.querySelector('.fa-thumbs-down');
-    
-    if (event.target === likeButton) {
-        likeButton.parentElement.style.background = "rgba(211, 211, 211, 1)";
-        dislikeButton.parentElement.style.background = "";
-    } else if (event.target === dislikeButton) {
-        dislikeButton.parentElement.style.background = "rgba(211, 211, 211, 1)";
-        likeButton.parentElement.style.background = "";
-    }
-    
-    const allContainers = document.querySelectorAll('.review');
-    allContainers.forEach((container) => {
-        if (container !== likeDislikeContainer) {
-            container.querySelector('.fa-thumbs-up').parentElement.style.background = "";
-            container.querySelector('.fa-thumbs-down').parentElement.style.background = "";
-        }
-    });
+  const target = event.target;
+  if (!target.matches('i.fa-thumbs-up, i.fa-thumbs-down')) {
+      return;
+  }
+
+  const reviewContainer = target.closest('.review');
+  if (!reviewContainer) {
+      return;
+  }
+
+  const likeButton = reviewContainer.querySelector('.fa-thumbs-up');
+  const dislikeButton = reviewContainer.querySelector('.fa-thumbs-down');
+
+  if (target === likeButton) {
+      likeButton.parentElement.style.background = "#3B71FE";
+      dislikeButton.parentElement.style.background = "";
+  } else if (target === dislikeButton) {
+      dislikeButton.parentElement.style.background = "rgba(128, 128, 128, 0.5)";
+      likeButton.parentElement.style.background = "";
+  }
+
+  const allContainers = document.querySelectorAll('.review');
+  allContainers.forEach((container) => {
+      if (container !== reviewContainer) {
+          container.querySelectorAll('.fa-thumbs-up').parentElement.style.background = "";
+          container.querySelectorAll('.fa-thumbs-down').parentElement.style.background = "";
+      }
+  });
 }
 
-const likeDislikeContainers = document.querySelectorAll('.review');
-likeDislikeContainers.forEach((container) => {
-    container.addEventListener('click', handleLikeDislikeClick);
-});
-
+document.addEventListener('click', handleLikeDislikeClick);
 
 // Get the modal
 const modal = document.getElementById("modal");
@@ -40,8 +44,6 @@ const span = document.getElementsByClassName("close")[0];
 btn.onclick = function() {
   modal.style.display = "block";
 }
-
-// When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
 }

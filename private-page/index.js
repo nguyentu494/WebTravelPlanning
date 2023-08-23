@@ -23,7 +23,12 @@ window.onclick = function(event) {
 }
 
 function changePageAccount(){
-  window.location.href = "/profile-page/index.html"
+  window.location.href = "../profile-page/index.html"
+}
+
+
+function changePage(){
+  window.location.href = "../profile-page/myTour.html"
 }
 
 var pass

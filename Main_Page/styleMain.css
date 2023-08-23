@@ -7,6 +7,10 @@
 body{
     font-family: 'Inter',sans-serif;
 }
+:root{
+    --primary-color: #3B71FE;
+}
+
 body::-webkit-scrollbar {
     width: 10px;
 }
@@ -18,7 +22,7 @@ body::-webkit-scrollbar-thumb {
     border-radius: 10px; 
 }
 body::-webkit-scrollbar-thumb:hover {
-    background-color: #3B71FE;
+    background-color: var(--primary-color);
 }
 
 .web_container{
@@ -37,7 +41,6 @@ body::-webkit-scrollbar-thumb:hover {
     padding: 15px 0;
     font-size: 1.3em;
     box-shadow: rgb(38, 57, 77,0.8) 0px 20px 30px -10px;
-    /* position: -webkit-sticky; */
     position: fixed;
     top: 0;
     width: 100%;
@@ -138,7 +141,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .slide-wrapper {
    width: 300%;
-   -webkit-animation: slideshow 30s ease infinite;
+   animation: slideshow 30s ease infinite;
    display: flex;
    align-items: center;
  }
@@ -165,16 +168,16 @@ body::-webkit-scrollbar-thumb:hover {
     object-fit: cover;
     opacity: 0.6;
  }
-@-webkit-keyframes slideshow {
+@keyframes slideshow {
 
-   10% {margin-left: 0%;}
-   20% {margin-left: -100%;}
+    10% {margin-left: 0%;}
+    20% {margin-left: -100%;}
     35% {margin-left: -100%;} 
     50% {margin-left: -200%;} 
     65% {margin-left: -200%;} 
     75% {margin-left: -100%;} 
-   90% {margin-left: -100%;} 
-   100%{margin-left: 0%} 
+    90% {margin-left: -100%;} 
+    100%{margin-left: 0%} 
  }
  
 .header_infor_details{
@@ -238,6 +241,7 @@ body::-webkit-scrollbar-thumb:hover {
     margin-top: 50px;
     margin-bottom: 80px;
     margin-left: 40px;
+    overflow: hidden;
 }
 .input_details .search_plan input[type="text"]{
     padding: 20px 20px 20px 30px ;
@@ -249,12 +253,13 @@ body::-webkit-scrollbar-thumb:hover {
     height: 70px;
     box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
     font-family: 'Inter',sans-serif;
-    caret-color: #3B71FE ;
+    caret-color: var(--primary-color) ;
     font-size: 1.2rem;
     font-weight: 600;
     background: rgba(232, 217, 217,0.8);
     opacity: 0.7;
-    transition : 0.25s ease
+    transition : all 0.25s ease;
+    overflow: hidden;
 }
 .search_plan img{
     position: absolute;
@@ -277,14 +282,14 @@ body::-webkit-scrollbar-thumb:hover {
     font-style: normal;
     background: #fff;
     line-height: 24px; 
-    border-bottom: 5px solid #3B71FE;
+    border-bottom: 3px solid var(--primary-color);
 }
 .search_plan .fa-arrow-right{
     position: absolute;
     /* top: 0; */
     right: 10px;
     padding : 20px;
-    background-color: #3B71FE;
+    background-color: var(--primary-color);
     border-radius: 50%;
     color : #fff;
     margin : 15px 0;
@@ -341,7 +346,7 @@ body::-webkit-scrollbar-thumb:hover {
     margin-left: -30px;
 }
 .feedback_numbers span{
-    color : #3B71FE;
+    color : var(--primary-color);
     font-size: 1.8em;
     font-weight: 700;
 }
@@ -375,7 +380,8 @@ body::-webkit-scrollbar-thumb:hover {
     opacity: 0.8;
 }
 .header_brands ul li img:hover{
-    scale: 1.1;
+    transform: scale(1.1);
+    /* scale: 1.1; */
 }
 .discorver_container{
     position: relative;
@@ -479,7 +485,7 @@ body::-webkit-scrollbar-thumb:hover {
     position: absolute;
     right: -5px;
     bottom: 3px;
-    background-color: #3B71FE;
+    background-color: var(--primary-color);
     padding : 10px;
     align-items: center;
     text-align: center;
@@ -526,7 +532,7 @@ body::-webkit-scrollbar-thumb:hover {
 .footer_service ul li a:hover ,
 .footer_support ul li a:hover,
 .footer_business ul li a:hover{
-    color : #3B71FE;
+    color : var(--primary-color);
 }
 .footer_socials{
     display: flex;
@@ -566,7 +572,7 @@ body::-webkit-scrollbar-thumb:hover {
 .card_create_2,
 .card_create_3{
     position: relative;
-    /* background-color: #3B71FE; */
+    /* background-color: var(--primary-color); */
     border-radius: 40px;
     height: 450px;
     padding : 20px;
@@ -608,7 +614,7 @@ body::-webkit-scrollbar-thumb:hover {
     right: 0;
     padding: 14px;
     margin-right: 20px ;
-    color : #3B71FE;
+    color : var(--primary-color);
 }
 .details_create{
     display: flex;
@@ -721,7 +727,7 @@ body::-webkit-scrollbar-thumb:hover {
     gap : 10px;
 }
 .infor_booking .fa-circle-dot{
-    color : #3B71FE;
+    color : var(--primary-color);
 }
 .infor_booking span{
     font-weight: 700;
@@ -818,18 +824,22 @@ opacity: 0.7;}
   
   .controls {
     position: absolute;
-    left: 43%;
+    left: 37%;
     top: 510px;
   }
   
   .prev,
   .next {
-    background: transparent;
+    width: 30px;
+    height: 30px;
+    background: #fff;
     border: none;
     font-size: 20px;
     color: #333;
     cursor: pointer;
     margin: 0 10px;
+    border-radius: 50%;
+    text-align: center;
   }
   
   .prev:focus,
@@ -894,7 +904,6 @@ opacity: 0.7;}
     border-bottom: 1px solid #e5dcdcac;
 }
 .user-menu ul li a:hover {
-    /* background-color:rgba(230, 226, 226, 0.372); */
     padding: 0px 5px;
     border-radius: 5px;
 }

@@ -5,16 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- library scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
      <!-- a part style main and second css -->
     <link rel="stylesheet" href="styleMain.css">
 
     <link rel="stylesheet" href="slide4.css">
     <link rel="stylesheet" href="slide3.css">
     <link rel="stylesheet" href="slide2.css">
-    <!-- -------------------------------------- -->
-    
-    <!-- library scroll -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- --------------------------------- -->
 
     <!-- title and shortcut -->
     <title>Travel_planning - Airtrav</title>
@@ -30,25 +30,25 @@
                 </div>
                 <div class="nav_select">
                     <ul>
-                        <li><a target="_self" href="/create_trip-page/index.html" title="click to details page">Things To Do</a></li>
-                        <li><a href="/tours-page/index.html" title="click to details page">Tour</a></li>
-                        <li><a href="/blog-page/index.html" title="click to details page">Blog</a></li>
+                        <li><a target="_self" href="../create_trip-page/index.html" title="click to details page">Things To Do</a></li>
+                        <li><a href="../tours-page/index.html" title="click to details page">Tour</a></li>
+                        <li><a href="../blog-page/index.html" title="click to details page">Blog</a></li>
                     </ul>
                 </div>
                 <div class="nav_user">
                     <ul>
                         <li><a href="#" title="Currency conversion">USD</a></li>
-                        <li><a href="/FAQ-page/index.html">FAQ</a></li>
+                        <li><a href="../FAQ-page/index.html">FAQ</a></li>
                         <li><a href="#"><i class="fa-regular fa-bell" title="Notification
                             "></i></a></li>
                         <li class="user-menu">
                             <img src="image/user_header.png" alt="" class="user-avatar">
                             <ul class="menu">
-                                <li><a href="/profile-page/index.html">Accounts</a></li>
-                                <li><a href="/Help_page/index.html">Helps</a></li>
+                                <li><a href="../profile-page/index.html">Accounts</a></li>
+                                <li><a href="../Help_page/index.html">Helps</a></li>
                                 <li>
                                     <i class="fa-solid fa-arrow-right-from-bracket"></i>
-                                    <a href="/sign-page/signup.html">Sign out</a></li>
+                                    <a href="../sign-page/signup.html">Sign out</a></li>
                                 <li><a href="">Interface</a>
                                 <div class="status">
                                     <i class="fa-regular fa-sun"></i>
@@ -297,8 +297,8 @@
                 </div>
 
                 <div class="controls">
-                    <button type="button" class="prev"><i class="fa-solid fa-angle-left"></i></button>
-                    <button type="button" class="next"><i class="fa-solid fa-angle-right"></i></button>
+                    <button title="previous-button" type="button" class="prev"><i class="fa-solid fa-angle-left"></i></button>
+                    <button title="next-button" type="button" class="next"><i class="fa-solid fa-angle-right"></i></button>
                   </div>
             </div>
 
@@ -434,7 +434,7 @@
         </div>
 
         <div class="discorver_container">
-            <h2>Discover our Features</h2>
+            <h2 data-aos="fade-up">Discover our Features</h2>
             <div class="discover_content">
                 <div class="details_discover" data-aos="fade-right">
                     <div class="share">
@@ -616,9 +616,12 @@
             </div>
         </div>
     </div>
+</body>
 
     <script src="https://kit.fontawesome.com/013b757403.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="/js/main.js"></script>
-</body>
+    <script src="/WebTravelPlanning/js/main.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </html>
