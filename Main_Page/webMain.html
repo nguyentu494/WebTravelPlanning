@@ -478,9 +478,192 @@
                     <br>can't get much more advanced than 14 days. 
                 </p>
     
-                <a href="/tours-page/index.html" class="go-plan-btn">Go Plan</a>
+                <!-- Open modal create trip -->
+                <a class="go-plan-btn" id="createPlan">Go Plan</a>
             </div>
             
+            <div id="modalPlan" class="modalPlan">
+                <div class="modal-content">
+                 <div class="modal-plan-left">
+                    <i class="fa-solid fa-xmark closePlan"></i>
+                    <h3>Create Trip</h3>
+                    <div class="form-create-trip">
+                        <label for="" class="location">
+                            <span>Location</span>
+                            <input type="text" placeholder="City name">
+                        </label>
+                        <div class="middle-date">
+                            <label for=""class=checkIn>
+                                <span>Check in</span>
+                                <input type="date" placeholder="Start Date">
+                            </label>
+                            <label for=""class=checkOut>
+                                <span>Check out</span>
+                                <input type="date" placeholder="End Date">
+                            </label>
+                        </div>
+                        <label for="" class="travellers">
+                            <span>Travellers</span>
+                            <button title=" select member and room " class="select_trv" type="button" placeholder="Passenger"> 1 Room 1 Guest
+                                <i class="fa-solid fa-angle-right"></i>
+                            </button>
+                            <div class="passenger_detail_trav">
+                                <div class="passenger_top">
+                                    <label for="" class="adults">
+                                        <h5>Adults</h5>
+                                        <div class="select_number">
+                                            <span><i class="fa-solid fa-minus"></i></span>
+                                            <span>0</span>
+                                            <span><i class="fa-solid fa-plus"></i></span>
+                                        </div>
+                                    </label>
+                                    <label for="" class="children">
+                                        <h5>Childrens</h5>
+                                        <div class="select_number">
+                                            <span><i class="fa-solid fa-minus"></i></span>
+                                            <span>0</span>
+                                            <span><i class="fa-solid fa-plus"></i></span>
+                                        </div>
+                                    </label>
+                                    <label for="" class="room">
+                                        <h5>Rooms</h5>
+                                        <div class="select_number">
+                                            <span><i class="fa-solid fa-minus"></i></span>
+                                            <span>0</span>
+                                            <span><i class="fa-solid fa-plus"></i></span>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="passenger_middle">
+                                        <h5>Children's age <span>(required)</span></h5>
+                                        <input type="number" value="1">
+                                </div>
+                                <div class="passenger_bottom">
+                                    <button type="reset">Reset</button>
+                                    <button type="submit">Apply</button>
+                                </div>
+                            </div>
+                        </label>
+                        <label for="" class="budget">
+                            <span>Set Budget</span>
+                            <button class="select_price" type="button" title="select your price" value="$0 - $600">$0 - $600
+                                <i class="fa-solid fa-angle-right"></i>
+                            </button>
+                            <div class="budget_detail">
+                                <div class="budget_top">
+                                    <h4>Price range</h4>
+                                    <input type="range">
+                                    <div class="number_infor">
+                                        <span>$0</span>
+                                        <span>$600</span>
+                                    </div>
+                                    <div class="number_detail">
+                                        <label for="" class="min_price">
+                                            <span>Min price</span>
+                                            <input type="number" value="0">
+                                        </label>
+                                        <label for="" class="max_price">
+                                            <span>Max price</span>
+                                            <input type="number" value="600">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="budget_bottom">
+                                    <button type="reset">Reset</button>
+                                    <button type="submit">Apply</button>
+                                </div>
+                            </div>
+                        </label>
+                        <div class="bottom-select">
+                            <label for="" class="type-pro">
+                                <span>Properties type</span>
+                                <ul class="select_type">
+                                    <li>All</li>
+                                    <li>Hotel</li>
+                                    <li>House/Apartment</li>
+                                </ul>
+                            </label>
+                            <label for="" class="filters">
+                                <span>More filters</span>
+                                <button class="select_filter" type="button" title="select your filter">Select
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </button>
+                                <div class="filter_detail">
+                                    <div class="filter_top">
+                                        <h3>Hotel Class</h3>
+                                        <div class="filter_top_select">
+                                            <button>0-1 <i class="fa-solid fa-star"></i></button>
+                                            <button>2 <i class="fa-solid fa-star"></i></button>
+                                            <button>3 <i class="fa-solid fa-star"></i></button>
+                                            <button>4 <i class="fa-solid fa-star"></i></button>
+                                            <button>5 <i class="fa-solid fa-star"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="filter-middle">
+                                        <h3>Popular filters</h3>
+                                        <div class="filter_middle_select">
+                                            <label for="">
+                                                <input type="checkbox">
+                                                <span>ok</span>
+                                            </label>
+                                            <label for="">
+                                                <input type="checkbox">
+                                                <span>ok</span>
+                                            </label>
+                                            <label for="">
+                                                <input type="checkbox">
+                                                <span>ok</span>
+                                            </label>
+                                            <label for="">
+                                                <input type="checkbox">
+                                                <span>ok</span>
+                                            </label>
+                                            <label for="">
+                                                <input type="checkbox">
+                                                <span>ok</span>
+                                            </label>
+                                            <label for="">
+                                                <input type="checkbox">
+                                                <span>ok</span>
+                                            </label>
+                                            <label for="">
+                                                <input type="checkbox">
+                                                <span>ok</span>
+                                            </label>
+                                            <label for="">
+                                                <input type="checkbox">
+                                                <span>ok</span>
+                                            </label>
+                                            <label for="">
+                                                <input type="checkbox">
+                                                <span>ok</span>
+                                            </label>
+                                            <label for="">
+                                                <input type="checkbox">
+                                                <span>ok</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="filter_bottom">
+                                        <button type="reset">Reset</button>
+                                        <button type="submit">Apply</button>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                        
+                    </div>
+                    <button class="create_trip-btn" type="submit">Create Trip</button>
+                 </div>
+                 <div class="modal-plan-right">
+                    <div class="plan-image">
+                        <img src="image/create-trip.png" alt="">
+                    </div>
+                 </div>
+                  
+                </div>
+            </div>
+
             <div class="steps-book">
                 <img src="image/illustration.png" alt="" class="people">
                 <div class="to-step-book"  data-aos="fade-up"
@@ -620,7 +803,7 @@
 
     <script src="https://kit.fontawesome.com/013b757403.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="/WebTravelPlanning/js/main.js"></script>
+    <script src="../js/main.js"></script>
     <script>
         AOS.init();
     </script>

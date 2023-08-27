@@ -8,7 +8,7 @@ profile.onclick = function(){
 const searchTour = document.getElementById('searchTour');
 
 searchTour.addEventListener('click' , (e) => {
-    window.location.href = "/create_trip-page/index.html"
+    window.location.href = "../create_trip-page/index.html"
 })
 
 const slides = document.querySelectorAll('.booking_cards');
@@ -41,3 +41,54 @@ next.addEventListener('click', function() {
 });
 
 // AOS.init();
+
+// const modalPlan = document.getElementById("modalPlan");
+// const btnPlan =  document.getElementById("createPlan");
+// const btnClosePlan = document.querySelector(".closePlan");
+//     modalPlan.style.display = "none";
+//     btnPlan.onclick = function() {
+//       modalPlan.style.transitionDuration = "0.5s";
+//       modalPlan.style.display = "block";
+//     };
+//     btnClosePlan.onclick = function() {
+//       modalPlan.style.display = "none";
+//     };
+
+const btn_trv = document.querySelector('.select_trv');
+const btn_price = document.querySelector('.select_price');
+const passengerDetail = document.querySelector('.passenger_detail_trav');
+const budgetDetail = document.querySelector('.budget_detail');
+const btn_filter = document.querySelector('.select_filter');
+const filterDetail = document.querySelector('.filter_detail');
+
+// toggle hiện đang bật
+let activeToggle = null;
+
+btn_trv.addEventListener("click",() => {
+  ToggleDetail(passengerDetail);
+})
+
+btn_price.addEventListener('click', () => {
+  ToggleDetail(budgetDetail);
+})
+
+btn_filter.addEventListener('click', () => {
+  ToggleDetail(filterDetail);
+})
+
+function ToggleDetail(ele) {
+  if (activeToggle === ele) {
+    ele.classList.remove('details');
+    activeToggle = null;
+  } else {
+    if (activeToggle) {
+      activeToggle.classList.remove('details');
+    }
+    ele.classList.add('details');
+    activeToggle = ele;
+  }
+}
+
+
+
+
