@@ -42,17 +42,17 @@ next.addEventListener('click', function() {
 
 // AOS.init();
 
-// const modalPlan = document.getElementById("modalPlan");
-// const btnPlan =  document.getElementById("createPlan");
-// const btnClosePlan = document.querySelector(".closePlan");
-//     modalPlan.style.display = "none";
-//     btnPlan.onclick = function() {
-//       modalPlan.style.transitionDuration = "0.5s";
-//       modalPlan.style.display = "block";
-//     };
-//     btnClosePlan.onclick = function() {
-//       modalPlan.style.display = "none";
-//     };
+const modalPlan = document.getElementById("modalPlan");
+const btnPlan =  document.getElementById("createPlan");
+const btnClosePlan = document.querySelector(".closePlan");
+    modalPlan.style.display = "none";
+    btnPlan.onclick = function() {
+      modalPlan.style.transitionDuration = "0.5s";
+      modalPlan.style.display = "block";
+    };
+    btnClosePlan.onclick = function() {
+      modalPlan.style.display = "none";
+    };
 
 const btn_trv = document.querySelector('.select_trv');
 const btn_price = document.querySelector('.select_price');

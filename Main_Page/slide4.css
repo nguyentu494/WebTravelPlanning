@@ -208,7 +208,7 @@
     gap: 15px;
     flex-direction: column;
     padding: 15px 0;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid rgb(222, 215, 215);
   }
   .passenger_top > .adults,
   .passenger_top > .children ,
@@ -245,7 +245,7 @@
     align-items: center;
     justify-content:space-between;
     padding: 20px 0;
-    border-bottom: 1px solid grey;;
+    border-bottom: 1px solid rgb(222, 215, 215);
   }
   .passenger_middle h5{
     font-weight: bold;
@@ -476,14 +476,35 @@
     padding: 20px 15px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 5px;
-    top: 40%;
+    top: 30%;
     left: 48%; 
+  }
+  .filter_detail h3{
+    font-size: 16px;
+    line-height:40px;
   }
   .filter_top_select{
     width: 100%;
     display:flex;
     align-items: center;
     justify-content:space-between;
+    gap: 20px
+  }
+  .filter_top_select button{
+    background: rgba(137,200,232,0.5);
+    /* padding: 8px 15px; */
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    outline: none;
+    border-radius: 30px;
+    border: none;
+    width: 80px;
+    height: 40px;
+    gap: 6px;
+  }
+  .filter_top_select i{
+    color: #005fa3;
   }
   .filter_middle_select{
     display: grid;
@@ -496,7 +517,15 @@
     gap: 10px;
     flex-direction: row;
   }
-
+  .filter_middle_select label input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  .filter_middle_select label span{
+    font-size: 0.9em;
+    color: grey
+  }
   .closePlan {
     top: 10px;
     right: 10px;
