@@ -10,7 +10,6 @@ body{
 :root{
     --primary-color: #3B71FE;
 }
-
 body::-webkit-scrollbar {
     width: 10px;
 }
@@ -383,6 +382,7 @@ body::-webkit-scrollbar-thumb:hover {
     transform: scale(1.1);
     /* scale: 1.1; */
 }
+
 .discorver_container{
     position: relative;
     margin: 50px 100px;
